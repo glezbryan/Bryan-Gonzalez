@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+header{
+    background-color: rgba(107, 30, 30, 0.79);
+    padding: 10px;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+}
