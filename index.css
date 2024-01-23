@@ -1,30 +1,108 @@
 body{
     margin: 0;
     color: white;
-    background-color: rgb(13, 13, 14);
+    background-color: rgb(15, 15, 15);
 }
 a{
     color: white;
     text-decoration-line: none;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 0px;
 }
 
 header{
-    background-color:rgb(31, 31, 32);
+    background-color:rgb(32, 32, 32);
     padding: 0px 15px;
-    border-bottom: 1px solid rgb(105, 105, 105);
+    border-bottom: 1px solid rgb(100, 100, 100);
 
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
-}
-.title{
-    font-size: 32px;
-    flex-grow: 1;
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 25px;
+    }
+    .title{
+        font-size: 32px;
+        flex-grow: 1;
+        z-index: 100;
+    }
 }
 
+@media(max-width: 767px){
+    .container nav{
+        display: none;  
+    }
+}
+
+
+
+
+.hamburger{
+    z-index: 100;
+    position: relative;
+    display: block;
+    width: 40px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+.hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+.hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-9px, 5px);
+}
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-9px, -6px);
+}
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+.mobile-nav{
+    position: fixed;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: rgba(40, 40, 40, 0.9);
+    padding-top: 120px; 
+    transition: 0.4s;
+    a{
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        padding: 12px 16px;
+        background-color: rgb(32, 32, 32);
+    }
+    a:hover{
+        background-color: rgb(64, 64, 64);
+    }
+}
+.mobile-nav.is-active{
+    top: 0;
+}
+@media (min-width: 767px){
+    .mobile-nav{
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+}
 
 main{
     margin: 70px 10px;
@@ -44,14 +122,14 @@ main{
 }
 
 footer{
-    background-color:rgb(31, 31, 32);
+    background-color:rgb(32, 32, 32);
     padding: 15px 15px;
-    border-top: 1px solid rgb(105, 105, 105);;
+    border-top: 1px solid rgb(100, 100, 100);;
     display: flex;
-}
-.footer-link{
-    display: block;
-}
-.footer-notes{
-    width: 50dvw;
+    p{
+        width: 50%;
+    }
+    nav a{
+        display: block;
+    }
 }

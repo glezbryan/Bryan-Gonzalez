@@ -10,33 +10,39 @@ main{
     background-color: grey;
     border-radius: 20px;
     min-height: 300px;
-    width: 1000px;
+    width: 80%;
     padding: 0px 15px;
     color: rgb(42, 41, 41);
-}
-.project-header{
-    display: flex;
-}
-.project-title{
-    flex-grow: 1;
+    .project-header{
+        display: flex;
+        align-content: center;
+        .title{
+            flex-grow: 1;
+        }
+    }
+
+    img{
+        height: 400px;
+        border-radius: 10px;
+        border: solid black 4px;
+    }
+    .project-image-container{
+        display: flex;
+        overflow-x: scroll;
+        scale: hidden;
+        gap: 10px;
+        margin: 20px;
+    }
+    .project-image-container::-webkit-scrollbar {
+        display: none;
+    }
+    .project-image-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
 }
 
-.project-image-container{
-    display: flex;
-    overflow-x: scroll;
-    scale: hidden;
-    gap: 10px;
-    margin: 20px;
-}
-.project-image-container::-webkit-scrollbar {
-    display: none;
-}
-.project-image-container {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.project-image{
-    height: 400px;
-    border-radius: 10px;
-    border: solid black 4px;
-}
+
+
+
+
