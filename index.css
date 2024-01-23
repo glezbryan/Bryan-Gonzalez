@@ -29,6 +29,7 @@ main{
     margin: 70px 10px;
     min-height: 100lvh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 10px;
 }
