@@ -120,12 +120,13 @@ footer{
     display: flex;
     gap: 200px;
     p{
-        width: 50%;
+        width: 40%;
     }
     a{
         color: white;
     }
     nav a{
+        width:40%;
         display: block;
     }
 }
