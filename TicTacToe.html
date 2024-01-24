@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/TicTacToe.css">
+    </head>
+    <body > 
+        <header>
+            <div class="container">
+                <h2 class="title" href="index.html">Bryan Gonzalez</h2>
+                <nav>|
+                    <a class="header-link" href="index.html">Home</a> |
+                    <a class="header-link" href="projects.html">Projects</a> |
+                    <a class="header-link" href="about.html">About</a> |
+                    <a class="header-link" href="contact.html">Contact Me!</a> |
+                </nav>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </div>
+        </header>
+        <nav class="mobile-nav">
+            <a class="header-link" href="index.html">Home</a>
+            <a class="header-link" href="projects.html">Projects</a>
+            <a class="header-link" href="about.html">About</a>
+            <a class="header-link" href="contact.html">Contact Me!</a>
+        </nav>
+        <main>
+            <div>
+                <button class="grid top_left"       onclick="play(0)"      onmouseover="setHover(0);"        onmouseleave="unsetHover(0);">.</button>
+                <button class="grid top_center"     onclick="play(1)"    onmouseover="setHover(1);"      onmouseleave="unsetHover(1);">.</button>
+                <button class="grid top_right"      onclick="play(2)"     onmouseover="setHover(2);"       onmouseleave="unsetHover(2);">.</button><br>
+            </div>
+            <div>
+                <button class="grid center_left"    onclick="play(3)"   onmouseover="setHover(3);"     onmouseleave="unsetHover(3);">.</button>
+                <button class="grid center_center"  onclick="play(4)" onmouseover="setHover(4);"   onmouseleave="unsetHover(4);">.</button>
+                <button class="grid center_right"   onclick="play(5)"  onmouseover="setHover(5);"    onmouseleave="unsetHover(5);">.</button><br>
+            </div>
+            <div>
+                <button class="grid bottom_left"    onclick="play(6)"   onmouseover="setHover(6);"     onmouseleave="unsetHover(6);">.</button>
+                <button class="grid bottom_center"  onclick="play(7)" onmouseover="setHover(7);"   onmouseleave="unsetHover(7);">.</button>
+                <button class="grid bottom_right"   onclick="play(8)"  onmouseover="setHover(8);"    onmouseleave="unsetHover(8);">.</button><br>
+            </div>
+            <p class="result"></p>
+            <p class="score"></p>
+            <button class="play_again" onclick="playAgain();">Play Again?</button>
+            <button class="reset_score" onclick="resetScore();">Reset Score</button>
+        </main>
+        
+        <footer>
+            <p>
+                Bryan Gonzalez<br>
+                Email: <a href="mailto: glezbryan12@gmail.com">glezbryan12@gmail.com</a><br>
+                2024
+            </p>
+            <nav>
+                <a href="index.html">- Home</a>
+                <a href="projects.html">- Projects</a>
+                <a href="about.html">- About</a>
+                <a href="contact.html">- Contact Me!</a>
+            </nav>
+        </footer>
+        <script src="js/index.js"></script>
+        <script src="js/TicTacToe.js"></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+div{
+    display: flex;
+}
+
+.grid{
+    color: transparent;
+    background-color: transparent;
+    height: 100px;
+    width: 100px;
+    margin: none none;
+    border-color: white;
+    border-style:outset;
+    font-size: 45px;
+}
+
+.top_left{
+    border-top: none;
+    border-left: none;
+    
+}
+.top_center{
+    border-top: none;
+}
+.top_right{
+    border-top: none;
+    border-right: none;
+}
+.center_left{
+    border-left: none;
+}
+/*.center_center{
+
+}*/
+.center_right{
+    border-right: none;
+}
+.bottom_left{
+    border-bottom: none;
+    border-left: none;
+}
+.bottom_center{
+    border-bottom: none;
+}
+.bottom_right{
+    border-bottom: none;
+    border-right: none;
+}
+.selected{
+    cursor:auto;
+    color: white;
+}
+
+.hover{
+    background-color: gray;
+}
+
+.win{
+    background-color: green;
+}

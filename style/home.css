@@ -1,0 +1,16 @@
+main{
+    margin: 70px 10px;
+    min-height: 100lvh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.home-p{
+    width: 40dvw;
+}
+.home-image{
+    max-width: 400px;
+    max-height: 60vh;
+    border: solid 1px gray;
+}

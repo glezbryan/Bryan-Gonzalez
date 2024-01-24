@@ -1,8 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.jump-container{
+    z-index: 1;
+    width: 15%;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    text-wrap:wrap ;
+    font-size: 0.85rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(118, 118, 118);
+    a{
+        color: rgb(118, 118, 118);
+        font-size: 0.85rem;
+        text-decoration-line: underline;
+    }
+    
+}
+.jump-container::-webkit-scrollbar {
+    display: none;
+}
+.jump-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 main{
     margin: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:end;
     gap: 20px;
 }
 
