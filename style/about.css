@@ -16,7 +16,7 @@ main .body{
     background-color: grey;
     border-radius: 20px;
     min-height: 300px;
-    width: 40%;
+    min-width: 40%;
     padding: 0px 15px;
     color: rgb(42, 41, 41);
     
