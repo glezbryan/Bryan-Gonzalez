@@ -30,7 +30,7 @@ html {
     scrollbar-width: none;
 }
 
-main{
+main .container{
     margin: 20px;
     display: flex;
     flex-direction: column;
