@@ -1,4 +1,4 @@
-main{
+main .container{
     margin: 70px 10px;
     min-height: 100lvh;
     display: flex;
