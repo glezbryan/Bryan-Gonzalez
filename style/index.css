@@ -80,6 +80,9 @@ header .container{
     padding-top: 120px; 
     transition: 0.4s;
     a{
+        color: white;
+        text-decoration-line: none;
+        font-size: 1.2rem;
         display: block;
         width: 100%;
         max-width: 200px;
