@@ -57,7 +57,7 @@ header .container{
     height: 4px;
     background-color: white;
     margin: 6px 0px;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 .hamburger.is-active:before{
     transform: rotate(-45deg) translate(-9px, 5px);
