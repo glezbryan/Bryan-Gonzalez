@@ -40,6 +40,10 @@ main{
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+    a{
+        color: black;
+        text-decoration-line: underline;
+    }
 }
 
 
