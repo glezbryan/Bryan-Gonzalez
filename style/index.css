@@ -111,6 +111,10 @@ header .container{
 main{
     margin: 0px;
     min-height: 100lvh;
+    h2{
+        display: block;
+        text-alight: center;
+    }
 }
 
 footer{
