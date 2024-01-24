@@ -8,8 +8,7 @@ main{
     justify-content: center;
     gap: 30px;
     img{
-        width: 40%;
-        max-width: 400px;
+        max-width: 40%
         border: solid 1px gray;
     }
 }
