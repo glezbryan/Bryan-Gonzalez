@@ -113,7 +113,7 @@ main{
     min-height: 100lvh;
     h2{
         display: block;
-        text-alight: center;
+        text-align: center;
     }
 }
 
@@ -123,14 +123,15 @@ footer{
     border-top: 1px solid rgb(100, 100, 100);;
     display: flex;
     gap: 200px;
-    p{
-        width: 40%;
-    }
+    
     a{
         color: white;
     }
+    p{
+        width: 40%;
+    }
     nav a{
-        width:40%;
+        width:fit-content;
         display: block;
     }
 }
