@@ -124,13 +124,14 @@ footer{
     display: flex;
     gap: 200px;
     
-    a{
-        color: white;
-    }
     p{
         width: 40%;
     }
+    nav{
+        width: fit-content;
+    }
     nav a{
+        color: white;
         width:fit-content;
         display: block;
     }
