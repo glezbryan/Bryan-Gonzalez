@@ -123,15 +123,16 @@ footer{
     border-top: 1px solid rgb(100, 100, 100);;
     display: flex;
     gap: 200px;
-    
+    a{
+        color: white;
+    }
     p{
-        width: 40%;
+        width: 40dvw;
     }
     nav{
-        width: fit-content;
+        width: 40dvw;
     }
     nav a{
-        color: white;
         width:fit-content;
         display: block;
     }
