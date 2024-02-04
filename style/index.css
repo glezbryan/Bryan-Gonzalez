@@ -122,13 +122,15 @@ footer{
     padding: 15px 15px;
     border-top: 1px solid rgb(100, 100, 100);;
     display: flex;
-    gap: 200px;
-    
+    justify-content: space-around;
     a{
         color: white;
     }
     p{
-        width: 40%;
+        width: 40dvw;
+    }
+    nav{
+        width: 40dvw;
     }
     nav a{
         width:fit-content;
