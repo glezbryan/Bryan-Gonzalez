@@ -27,10 +27,17 @@ main{
     .body{
         background-color: grey;
         border-radius: 20px;
-        min-height: 400px;
+        height: 450px;
         max-width: 500px;
         padding: 0px 15px;
         color: rgb(42, 41, 41);
-        
+    }
+    @media(max-width: 767px){
+        .body{
+            height: fit-content;
+        }
+        #Bambi{
+            order: 4;
+        }
     }
 }

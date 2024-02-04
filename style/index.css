@@ -16,6 +16,7 @@ header .container{
         display: flex;
         justify-content: space-evenly;
         gap: 25px;
+        background-color: transparent;
     }
     .title{
         font-size: 32px;
@@ -27,6 +28,12 @@ header .container{
         text-decoration-line: none;
         font-size: 1.2rem;
         padding: 0px;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: rgba(64, 64, 64, 0.75);
+        box-shadow: 0px 0px 5px 5px rgb(64, 64, 64,0.75);
     }
 }
 @media(max-width: 767px){
@@ -114,6 +121,9 @@ main{
     h2{
         display: block;
         text-align: center;
+    }
+    hr{
+        border-color: black;
     }
 }
 

@@ -1,28 +1,40 @@
+main{
+    margin: 20px;
+}
 main .container{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     justify-content: center;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    .middle{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
     h3{
         display: flex;
         height: 2rem;
         align-items:center;
         justify-content: center;
-        text-align: center;
     }
     .card{
+        margin: 0;
         background-color: grey;
         border-radius: 20px;
         width: 20%;
         min-width: 250px;
         height: 150px;
         padding: 0px 10px;
-        margin: 0px;
         color: rgb(42, 41, 41);
     }
     a{
         color: rgb(42, 41, 41);
         display: block;
+    }
+    @media(max-width: 767px){
+        flex-direction: column;
     }
     /*
     #email{
