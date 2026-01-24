@@ -52,7 +52,7 @@ main .container{
     min-height: 300px;
     width: 80%;
     padding: 0px 15px;
-    color: rgb(172, 172, 172);
+    color: rgb(141, 140, 140);
     .project-header{
         display: flex;
         align-content: center;
