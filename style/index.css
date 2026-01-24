@@ -1,14 +1,14 @@
 body{
     margin: 0;
-    color: white;
-    background-color: rgb(15, 15, 15);
+    color: rgb(172, 172, 172);;
+    background-color: rgb(3, 1, 27);
 }
 
 
 header .container{
-    background-color:rgb(32, 32, 32);
+    background-color:rgb(14, 3, 78);
     padding: 0px 15px;
-    border-bottom: 1px solid rgb(100, 100, 100);
+    border-bottom: 1px solid rgb(38, 0, 255);
 
     display: flex;
     align-items: center;
@@ -128,9 +128,9 @@ main{
 }
 
 footer{
-    background-color:rgb(32, 32, 32);
+    background-color:rgb(14, 3, 78);
     padding: 15px 15px;
-    border-top: 1px solid rgb(100, 100, 100);;
+    border-top: 1px solid rgb(38, 0, 255);
     display: flex;
     justify-content: space-around;
     a{
