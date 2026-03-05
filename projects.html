@@ -29,10 +29,10 @@
         </nav>
         <div class="jump-container">
             <b>Jump To:</b>
-            <a href="#Christmas"><b>Christmas Lights Controller</b></a>
+            <a href="#Current"><b>Current</b></a>
             <a href="#Guitar"><b>Automated Guitar Tuner</b></a>
             <a href="#I2C"><b>I2C Module</b></a>
-            <a href="#RF"><b>RF Controller</b></a>
+            <a href="#IR"><b>IR Controller</b></a>
             <a href="#Calc"><b>Calculator</b></a>
             <a href="#Calc-MC"><b>Calculator (Minecraft)</b></a>
             <a href="#GBA-Repair"><b>GBA Repair</b></a>
@@ -45,11 +45,36 @@
             <h2>My Projects</h2>
             <div class="container">
 
-                <div class="project-body" id="Christmas">
+                <div class="project-body" id="Current">
                     <div class="project-header">
-                        <h3 class="title">Christmas Lights Controller</h3>
-                        <h3>Current</h3>
+                        <h3 class="title">What Am I working On Right Now?</h3>
                     </div>
+                    <hr>
+                    <p>
+                        <b>Battery Monitoring System for the UTA FSAE team</b><br>
+                        - Working with freeRTOS<br>
+                        - Learning to use KiCAD for PCB design<br>
+                        - implementing cell balancing<br>
+                        - Designing with Fusion 360
+                    </p>
+                    <hr>
+                    <p>
+                        <b>RISCV Processor Design</b><br>
+                        - Using the AMD Blackboard for the FPGA <br>
+                        - Designing a 5 stage pipeline: Fetch, Decode, Execute, Memory, Write Back<br>
+                        - Operating a 100MHz Clock with no stepping down 
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Analog Christmas Lights Controller</b><br>
+                        - Using only op amps and BJTs (No IC or microcontroller)<br>
+                        - Creating an PWM genorator using a ciruit that creates a triangle
+                        wave that is compared against the output of a 4 bit DAC<br>
+                        - Creating 3 4-bit registers using just BJTs to store values for R,G and B that
+                        feed into a 4-bit DAC. <br>
+
+                    </p>
+                    
                 </div>
 
                 <div class="project-body" id="Guitar">
@@ -57,8 +82,55 @@
                         <h3 class="title"> Automated Guitar Tuner</h3>
                         <h3>December 3, 2025</h3>
                     </div>
+                    <div>
                     <a href="https://github.com/glezbryan/Guitar-Tuner">https://github.com/glezbryan/Guitar-Tuner</a>
                     <hr>
+                    <p>
+                    <b>Language</b><br>
+                        Embedded C
+                    </p>
+                    <hr>
+                    <p>
+                    <b>Hardware</b><br>
+                        <a href="https://www.st.com/en/evaluation-tools/nucleo-f446re.html">STM32F446RE Nucleo Board</a> - single-board STM32 microcontroller <br>
+                        <a href="https://dbunlimitedco.com/images/product_images/2D-Drawings/MW063002-2.pdf">MW063002-2</a> - Omnidirectional Electret Microphone<br>
+                        <a href="https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm358"> LM358</a> - Op Amp<br>
+                        <a href="https://www.ti.com/lit/ds/symlink/sn754410.pdf">N754410</a> - H-Bridge motor driver<br>
+                        <a href="https://www.amazon.com/dp/B0D22GZFPC?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1">NEMA 17</a> - Stepper Motor
+                    </p>
+                    <hr>
+                    <p>
+                    <b>Team Member(s)</b><br>
+                        Jordan Pinson
+                    </p>
+                    <hr>
+                    <p>
+                    <b>Description</b><br>
+                        The goal of this project was to make a guitar tuner that would 
+                        automatically drive the tuning pegs of a guitar using the 
+                        STM32F446RE Nucleo Board. The project used a basic 2 pin 
+                        mocrophone to capture the guitar being strum. The sound was 
+                        fed into an op amp to give it some gain and center it on the ADC 
+                        of STM32. In the software, the ADC would be sampled at a rate of 
+                        2048 Hz, stored in blocks of 2048 samples, and those samples were
+                        fed into an FFT using a Cooley-Tukey Algorithm. The peak of the 
+                        FFT would tell us what our fundamental frequency is (occasionally 
+                        the second fundamental). The goal was originally to make a full 
+                        PID to determine how many step for the motor to take but
+                        unfortunately, everything before this took up most of the time. 
+                        We had to cut is it down to just the proportional part of PID. 
+                        The delta of the current pitch and the target pitch was scaled 
+                        to the number of steps for the motor to take and the direction. 
+                        If there were any steps to take, a state machine would drive 
+                        the motor and thus the tuning peg.
+                    </p>
+                    <hr>
+                    <p>
+                    <b>More details and images can be found here:</b><br>
+                    <a href="projects/Embedded II - Final Project Report and Code.pdf">Project Report</a>
+                    </p>
+                    </div>
+
                 </div>
 
                 <div class="project-body" id="I2C">
@@ -66,12 +138,81 @@
                         <h3 class="title">I2C Module</h3>
                         <h3>December 2, 2025</h3>
                     </div>
+                    <div>
+                    <a href="https://github.com/glezbryan/SOC-I2C-Module.git">https://github.com/glezbryan/SOC-I2C-Module.git</a>
+                    <hr>
+                    <p>
+                    <b>Language</b><br>
+                        System Verilog, C</p>
+                    <hr>
+                    <p>
+                    <b>Hardware</b><br>
+                        <a href="https://www.amd.com/en/corporate/university-program/aup-boards/blackboard.html">AMD Blackboard</a> - FPGA and Processor<br>
+                        <a href="https://www.digikey.com/en/htmldatasheets/production/48622/0/0/1/mcp23008-e-p"> MCP23S08</a> - GPIO Expander(I2C device for testing)
+                    </p>
+                    <hr>
+                    <p>
+                    <b>Description</b><br>
+                        The goal of the project was to make an I2C module that could be interfaced using a
+                        AXI bus. The I2C module was designed to follow the standard for I2C protocol with the
+                        flexibillty of communication with simple or complex I2C devices (complex being devices
+                        with multiple registers). The module is interfaced using the AXI bus that connects the
+                        processor and the FPGA. Lastly, we created the drivers for the I2C module such that any
+                        program capable of reading and writing to a file can access and control the module.
+                    </p>
+                    <hr>
+                    <p>
+                    <b>More details and images can be found here:</b> <br>
+                    <a href="projects/CSE4356_REPORT_BRYAN_GONZALEZ.pdf">Project Report</a>
+                    </p>
+                    </div>
                 </div>
 
-                <div class="project-body" id="RF">
+                <div class="project-body" id="IR">
                     <div class="project-header">
-                        <h3 class="title"> RF Controller</h3>
+                        <h3 class="title"> IR Transmitter/Reciever </h3>
                         <h3>December 3, 2025</h3>
+                    </div>
+                    <a href="https://github.com/glezbryan/IR-Receiver-Transmitter">https://github.com/glezbryan/IR-Receiver-Transmitter</a>
+                    <hr>
+                    <b>Language</b><br>
+                        Embedded C <br>
+                    <hr>
+                    <p>
+                    <b>Description</b><br>
+                        This was one of my favorite projects because I was able to flex
+                        my electronics knowledge. The project was to make an embedded
+                        system using the EK-TM4C123GXL with an IR emmiter and reciever.
+                        The project used the NEC Infrared Transmission Protocol for
+                        transmissions and was tested with a TV at UTA. Multiple interupts
+                        were used as different threads to run things almost in parallel.
+                        Main was used for the Command line interface using UART to control
+                        transmissions. In the command line, a user could load two bytes
+                        into the transmission buffer for another thread to transmit. The
+                        user could also check if the most recent transmission received if 
+                        any. There were also some debug commands such as manually turning
+                        emiiter on and off or adjusting the brightness. On a seperate 
+                        thread, if there is data in the transmission buffer, a timer on an
+                        interrupt would change the state of the emmiter (ON/OFF) using 
+                        a state machine. The last thread used a 
+                        GPIO interrupt and would use a wide timer
+                        to get the time since the last GPIO interrupt and determine if
+                        the time matched a start bit, a '1', or a '0' of the NEC protocol.<br><br>
+                        The the part I'm proudest of is the hardware. Emitter required a
+                        38kHz PWM when ON so the best solution was an 'AND gate' with GPIO
+                        for ON/OFF and the PWM. Most people used a AND gate IC to handle that
+                        but the emmiter reqired more current than what the IC could put out. 
+                        Everyone else used two BJTs as a low side switches to act as the AND 
+                        gate. They did however forget how BJTs worked and used some resistors
+                        in the kilo ohms for the base of the BJT and severly limitted thier
+                        current. I however used the formual Ib = Ic/Beta to use a more appropiate
+                        resisitor. I was the only person who did not need to be inches from the 
+                        TV to send a command. The furthest I got was about 15 feet from the TV.
+                        The curcuit used is shown below
+                    </p>
+                    <div class="project-image-container">
+                        <img src="images/SchematicDiagram.png" alt="" class="project-image">
+                        <img src="images/CircuitPicture-Front.jpg" alt="" class="project-image">
                     </div>
                 </div>
 
@@ -80,18 +221,82 @@
                         <h3 class="title"> 8-Bit Two Function Calculator</h3>
                         <h3>December 15, 2024</h3>
                     </div>
+                    <a href=""></a>
+                    <hr>
+                    <p>
+                    <b>Language</b><br>
+                        System Verilog</p>
+                    <hr>
+                    <p>
+                    <b>Hardware</b><br>
+                        <a href="https://www.altera.com/asap/offering/po-2853/max-10-device-family-de10-lite-board"> DE10-Lite</a> - Altera FPGA<br>
+                    </p>
+                    <hr>
+                    <p>
+                    <b>Description</b><br>
+                        The project was the use Verilog to create an 8-Bit Two Function 
+                        Calculator. The project consisted of 4 main modules: an 
+                        Arithmetic Unit (AU), a Input Unit (IU), an Output Unit (OU) and 
+                        a Control Unit (CU).
+                        The AU is capable of addition and subtraction. For addition, full adders
+                        with carry outs linked accross were used. For Subtraction, the carry in
+                        for the first full adder was set to '1' and a hald adder adjusts the subtrahend.
+                        The IU uses a 4x4 keyboard and the IU scan the rows and colombs to determine 
+                        which key is seleted. The OU uses a barrel shifter to convert from binary to
+                        BCD which is then converted to a format for a seven segment display. The display
+                        has a common cathode so the 4 values are stored in registers and they are cycled 
+                        through and every display is being turned on one at a time really quick to 
+                        give the appearance that they are all on. The CU uses a state machine to 
+                        drive where we are in the operation. The module implementations are in the
+                        report in more detail.
+                    </p>
+                    <hr>
+                    <b>Multiplexed Display</b><br>
+                    The frame rate of my camera was faster than the display was cycling
+                    throught the digits. Thought it was interesting.
+                    <div class="project-image-container">
+                    
+                        <img src="images/TermProject/IMG_3841.JPG" alt="" class="project-image">
+                        <img src="images/TermProject/IMG_3842.JPG" alt="" class="project-image">
+                        <img src="images/TermProject/IMG_3843.JPG" alt="" class="project-image">
+                        <img src="images/TermProject/IMG_3844.JPG" alt="" class="project-image">
+                    </div>
+                    <hr>
+                    <b>More details and images can be found here:</b> <br>
+                    <a href="projects/TermProject-Report-BryanGonzalez.pdf">Project Report</a>
+                    </p>
                 </div>
 
                 <div class="project-body" id="Calc-MC">
                     <div class="project-header">
                         <h3 class="title"> 8-Bit Two Function Calculator (Minecraft)</h3>
                         <h3>December 15, 2024</h3>
-                        
                     </div>
                     <a href="https://1drv.ms/f/c/b882d57b518c0db2/IgAyc0RXZ3aWQJK84sEJGPaHAT8VZw_GZx_GO1v5XOE3Hj4?e=5d6nQg">
                         https://1drv.ms/f/c/b882d57b518c0db2/IgAyc0RXZ3aWQJK84sEJGPaHAT8VZw_GZx_GO1v5XOE3Hj4?e=5d6nQg
                     </a>
                     <hr>
+                    <p>
+                    <b>Description</b><br>
+                    This was a fun project I did while taking digital logic at UTA.
+                    As we completed labs on the Altera board, I would go into this
+                    Minecraft world and try to recreate the lab that week. Each lab is 
+                    labeled accordingly with signs. The goal was to complete the final
+                    project, the calaculator, using nothing but redstone. No command blocks
+                    or mods. The project was difficult because as a multiplexer in Verilog
+                    is just a couple of case statements, it was 8 or 16 AND gates depending
+                    on the inputs. The hardest parts were the barrel shifter and the BCD
+                    to binary converter. The barrel shifter was difficult just because
+                    of the sheer size of it. The converter was difficult the second digit
+                    had to be multiplied by 10 and the third by 100. In Verilog, we just
+                    used the multiplication operator which does not exist in Minecraft. I
+                    figured out I could use a matrix of AND gates and add all the rows together
+                    using a bunch of full adders just like you would if you were 
+                    multiplying by hand and that worked. Despite the difficulties,
+                    I did complete the calculator. It's a little slow but that's just 
+                    because Minecraft operates at 20 ticks a second and every gate takes
+                    about 1-2 ticks. There are some optimizations I could have made but I
+                    wanted to stay as close to source material as possible.
                 </div>
 
                 <div class="project-body" id="GBA-Repair">
