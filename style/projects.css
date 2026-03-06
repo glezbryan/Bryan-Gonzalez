@@ -47,12 +47,12 @@ main .container{
 }
 
 .project-body{
-    background-color: rgb(20, 0, 134);
+    background-color: rgb(20, 0, 90);
     border-radius: 20px;
     min-height: 300px;
     width: 80%;
     padding: 0px 15px;
-    color: rgb(141, 140, 140);
+    color: rgb(170, 170, 170);
     .project-header{
         display: flex;
         align-content: center;
@@ -84,7 +84,7 @@ main .container{
     }
 */
     a{
-        color: rgb(172, 172, 172);
+        color: rgb(170, 170, 170);
         text-decoration-line: underline;
     }
 }
