@@ -30,13 +30,16 @@
         <div class="jump-container">
             <b>Jump To:</b>
             <a href="#Current"><b>Current</b></a>
+            <a href="#RISCV"><b>RISCV Project</b></a>
+            <a href="#BeeMS"><b>BeeMS</b></a>
+            <a href="#AnalogLED"><b>Analog LED Controller</b></a>
             <a href="#Guitar"><b>Automated Guitar Tuner</b></a>
             <a href="#I2C"><b>I2C Module</b></a>
             <a href="#IR"><b>IR Controller</b></a>
+            <a href="#Mechatronics"><b>Mechatronics</b></a>
             <a href="#Calc"><b>Calculator</b></a>
             <a href="#Calc-MC"><b>Calculator (Minecraft)</b></a>
             <a href="#GBA-Repair"><b>GBA Repair</b></a>
-            <!--<a href="#TicTacToe"><b>Tic Tac Toe</b></a>-->
             <a href="#On-the-tip-of-my-tongue"> <b>On The Tip Of My Tongue</b></a>
             <a href="#Music-matrix"><b>Music matrix</b></a>
         </div>
@@ -51,30 +54,102 @@
                     </div>
                     <hr>
                     <p>
-                        <b>Battery Monitoring System for the UTA FSAE team</b><br>
-                        - Working with freeRTOS<br>
-                        - Learning to use KiCAD for PCB design<br>
-                        - implementing cell balancing<br>
-                        - Designing with Fusion 360
+                        <b>Currently Reading:</b><br>
+                        Programming the ESP32 in C using the Espressif IDF - Harry Fairhead
                     </p>
                     <hr>
                     <p>
-                        <b>RISCV Processor Design</b><br>
-                        - Using the AMD Blackboard for the FPGA <br>
-                        - Designing a 5 stage pipeline: Fetch, Decode, Execute, Memory, Write Back<br>
-                        - Operating a 100MHz Clock with no stepping down 
+                        <b>Active Projects:</b><br>
+                        - Designing a custom PCB for a 10W-175W speaker amplifier.<br>
+                        - Developing a PCB module integrated into air filters for automated 6-week maintenance reminders.<br>
+                        - Experimenting with small-scale ESP32 applications and embedded C drivers.
                     </p>
-                    <hr>
-                    <p>
-                        <b>Analog Christmas Lights Controller</b><br>
-                        - Using only op amps and BJTs (No IC or microcontroller)<br>
-                        - Creating an PWM genorator using a ciruit that creates a triangle
-                        wave that is compared against the output of a 4 bit DAC<br>
-                        - Creating 3 4-bit registers using just BJTs to store values for R,G and B that
-                        feed into a 4-bit DAC. <br>
+                </div>
 
+                <div class="project-body" id="RISCV">
+                    <div class="project-header">
+                        <h3 class="title">RISCV Project</h3>
+                        <h3>April 28, 2026</h3>
+                    </div>
+                    <a href="https://github.com/glezbryan/RISCV">https://github.com/glezbryan/RISCV</a>
+                    <hr>
+                    <p>
+                    <b>Language</b><br>
+                        System Verilog, C</p>
+                    <hr>
+                    <p>
+                    <b>Hardware</b><br>
+                        <a href="https://www.amd.com/en/corporate/university-program/aup-boards/blackboard.html">AMD Blackboard</a> - FPGA and Processor<br>
                     </p>
-                    
+                    <hr>
+                    <p>
+                        <b>Description</b><br>
+                        A RISCV processor design focused strictly on hardware implementation. 
+                        The design uses the AMD Blackboard for the FPGA and features a 
+                        5-stage pipeline: Fetch, Decode, Execute, Memory, and Write Back. 
+                        It successfully operates on a 100MHz clock with no stepping down.
+                    </p>
+                </div>
+
+                <div class="project-body" id="BeeMS">
+                    <div class="project-header">
+                        <h3 class="title">BeeMS (Battery Monitoring System)</h3>
+                        <h3>April 24, 2026</h3>
+                    </div>
+                    <a href="https://github.com/Gregification/BeeMS">https://github.com/Gregification/BeeMS</a>
+                    <hr>
+                    <p>
+                        <b>Team Members</b><br>
+                        George Boone, Khai Nguyen, Roman Rattanakone, Zakir Muqueet, Jayde Brown
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Description</b><br>
+                        Developed and tested a custom Battery Monitoring System for an electric racecar as part of a Formula SAE team senior design project. The project involved working with freeRTOS, implementing cell balancing, learning to use KiCAD for PCB design, and designing components with Fusion 360.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Reports</b><br>
+                        <a href="projects/BMS_CpE_conclusions.pdf">BMS_CpE_conclusions.pdf</a><br>
+                    </p>
+                    <p>
+                        <b>Demo Day Video</b>
+                    </p>
+                    <div class="project-image-container">
+                        <iframe width="444" height="250" src="https://www.youtube.com/embed/F64qCZF7GhY" title="Demo day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                    </div>
+                </div>
+
+                <div class="project-body" id="AnalogLED">
+                    <div class="project-header">
+                        <h3 class="title">Analog LED Controller</h3>
+                        <h3>January 2026</h3>
+                    </div>
+                    <hr>
+                    <p>
+                        <b>Hardware</b><br>
+                        Resistors, capacitors, BJTs, and op amps.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Description</b><br>
+                        An analog LED strip controller built using only op amps and BJTs 
+                        without any ICs or microcontrollers. It features a PWM generator 
+                        using a circuit that creates a triangle wave compared against the 
+                        output of a 4-bit DAC. It also utilizes three 4-bit registers made 
+                        using just BJTs to store values for R, G, and B that feed into the DAC.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Videos</b><br>
+                    </p>
+                    <div class="project-image-container">
+                        <iframe width="444" height="250" src="https://www.youtube.com/embed/E6IE48K64qA" title="Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                        
+                        <iframe width="141" height="250" src="https://www.youtube.com/embed/Do3JCYkrKLI" title="Testing 2x4 bit register" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                        
+                        <iframe width="444" height="250" src="https://www.youtube.com/embed/zBOZq6ATunQ" title="Start" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                    </div>
                 </div>
 
                 <div class="project-body" id="Guitar">
@@ -216,6 +291,77 @@
                     </div>
                 </div>
 
+                <div class="project-body" id="Mechatronics">
+                    <div class="project-header">
+                        <h3 class="title">Mechatronics</h3>
+                        <h3>Fall 2025</h3>
+                    </div>
+                    <a href="https://github.com/glezbryan/mechatronics">https://github.com/glezbryan/mechatronics</a>
+                    <hr>
+                    <p>
+                        <b>Team Members</b><br>
+                        Jordan Pinson
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Hardware</b><br>
+                        TM4C123GH6PM Microcontroller, LIDAR Module (UART), Strain Gauges (Full-bridge/Half-bridge), Thermocouples, LC Sensors, Brushless DC (BLDC) Motors, Permanent Magnet DC (PMDC) Motors, Stepper Motors, Solenoids, Flyback Zener Diodes (1N5819, 1N5913), MOSFETs, Hall Effect Sensors, Optical Sensors, LEDs, and Oscilloscopes.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Description</b><br>
+                        A comprehensive collection of mechatronics labs and mini-projects exploring the integration of hardware and software control systems. These projects utilize a TM4C123GH6PM microcontroller to interface with a variety of analog and digital sensors, control multiple motor types, and parse physical data ranging from temperature to spatial mapping.
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 01: Solenoid and Back-EMF</b><br>
+                        Explored the effects of back-EMF voltage spikes generated by a solenoid and tested various flyback zener diode configurations (such as 1N5819 and 1N5913) to mitigate damage. The system was ultimately controlled using a TM4C123GH6PM driving a MOSFET.<br>
+                        <a href="projects/Mechatronics-Lab01.pdf">Lab 01 Report</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 02: Stepper Motor</b><br>
+                        Calculated holding torque based on varying voltages and demonstrated step control by driving the stepper motor coils using a TM4C123GH6PM.<br>
+                        <a href="projects/Mechatronics-Lab02.pdf">Lab 02 Report</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 03: PMDC with Back-Emf Speed Sensing</b><br>
+                        Controlled a PMDC motor utilizing a PWM signal and measured its RPM by comparing data from an optical sensor and back-EMF voltage calculations.<br>
+                        <a href="projects/Mechatronics-Lab03.pdf">Lab 03 Report</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 04: BLDC Motor</b><br>
+                        Operated a Brushless DC (BLDC) motor directly and via a TM4C123GH6PM microcontroller, utilizing Hall effect sensors to accurately determine the coil activation sequences.<br>
+                        <a href="projects/Mechatronics-LabReport-Lab04.pdf">Lab 04 Report</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 05: LC Sensor Measurement</b><br>
+                        Designed and tested an LC sensor for dual applications: measuring liquid volume levels in milliliters and functioning as a metal detector with frequency-based LED color indicators.<br>
+                        <a href="projects/Mechatronics-LabReport-Lab05.pdf">Lab 05 Report</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 06: Thermocouple Measurements</b><br>
+                        Implemented lookup tables and interpolation in C to calibrate a thermocouple, successfully recording extreme temperatures from dry ice (-73.1°C) to a hot soldering iron (101.1°C).<br>
+                        <a href="projects/Mechatronics-LabReport-Lab06.pdf">Lab 06 Report</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 07: Strain Gauge Measurements</b><br>
+                        Calibrated a strain gauge using known masses to measure force in Newtons and identified structural fixes for axial strain interference using full-bridge or half-bridge configurations.<br>
+                        <a href="projects/Mechatronics-LabReport-Lab07.pdf">Lab 07 Report</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Lab 08: LIDAR</b><br>
+                        Interfaced a LIDAR module using UART to scan a physical space, storing and sorting the collected angle and distance data to calculate the total scanned area.<br>
+                        <a href="projects/Mechatronics-LabReport-Lab08.pdf">Lab 08 Report</a>
+                    </p>
+                </div>
+
                 <div class="project-body" id="Calc">
                     <div class="project-header">
                         <h3 class="title"> 8-Bit Two Function Calculator</h3>
@@ -348,25 +494,6 @@
                         <img src="images/GBA-Running.jpg" alt="" class="project-image">
                     </div>
                 </div>
-                <!--
-                <div class="project-body" id="TicTacToe">
-                    <div class="project-header">
-                        <h3 class="title"> X|O|X Tic tac toe O|X|O</h3>
-                        <h3>December 23, 2023</h3>
-                    </div>
-                    <a href="TicTacToe.html">TicTacToe.html</a>
-                    <hr>
-                    <p>
-                        <b>Language</b><br>
-                        JavaScript
-                        <hr>
-                        <b>Description</b><br>
-                        This game is a basic implementation of the classic Tic Tac Toe game written in JavaScript. Created after completing an introductory course in JavaScript, this was the first project JavaScript Project I did just for fun. Players face off against a computer opponent that randomly selects a box, making it relatively easy to win.
-                        <br><br>
-                        The game includes a score counter that tracks wins, losses, and ties, storing the data in local storage for persistent tracking across sessions. While the current version offers a simple gameplay experience, I plan to refine the code using better JavaScript practices and enhance the computer opponent's difficulty level. Future updates may also introduce a two-player mode for interactive gameplay between users.
-                    </p>
-                </div>
-                -->
                 <div class="project-body" id="On-the-tip-of-my-tongue">
                     <div class="project-header">
                         <h3 class="title"> On The Tip Of My Tongue</h3>
