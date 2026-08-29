@@ -125,6 +125,10 @@ main{
     hr{
         border-color: black;
     }
+    a{
+        color: rgb(170, 170, 170);
+        text-decoration-line: underline;
+    } 
 }
 
 footer{
