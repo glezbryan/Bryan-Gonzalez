@@ -1,762 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/index.css">
-        <link rel="stylesheet" href="style/projects.css">
-        <title>Bryan Gonzalez - Projects</title>
-    </head>
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style/index.css">
+       <link rel="stylesheet" href="style/projects.css">
+       <title>Bryan Gonzalez - Projects</title>
+   </head>
 
-    <body>
-        <header>
-            <div class="container">
-                <h2 class="title" href="index.html">Bryan Gonzalez</h2>
-                <nav>|
-                    <a class="header-link" href="index.html">Home</a> |
-                    <a class="header-link" href="projects.html">Projects</a> |
-                    <a class="header-link" href="contact.html">Contact Me!</a> |
-                </nav>
-                <button class="hamburger">
-                    <div class="bar"></div>
-                </button>
-            </div>
-        </header>
-        <nav class="mobile-nav">
-            <a class="header-link" href="index.html">Home</a>
-            <a class="header-link" href="projects.html">Projects</a>
-            <a class="header-link" href="contact.html">Contact Me!</a>  
-        </nav>
-        <div class="jump-container">
-            <b>Jump To:</b>
-            <a href="#Current"><b>Current</b></a>
-            <a href="#RISCV"><b>RISCV Project</b></a>
-            <a href="#BeeMS"><b>BeeMS</b></a>
-            <a href="#AnalogLED"><b>Analog LED Controller</b></a>
-            <a href="#Guitar"><b>Automated Guitar Tuner</b></a>
-            <a href="#I2C"><b>I2C Module</b></a>
-            <a href="#IR"><b>IR Controller</b></a>
-            <a href="#Mechatronics"><b>Mechatronics</b></a>
-            <a href="#Calc"><b>Calculator</b></a>
-            <a href="#Calc-MC"><b>Calculator (Minecraft)</b></a>
-            <a href="#GBA-Repair"><b>GBA Repair</b></a>
-            <a href="#On-the-tip-of-my-tongue"> <b>On The Tip Of My Tongue</b></a>
-            <a href="#Music-matrix"><b>Music matrix</b></a>
-        </div>
-        
-        <main>
-            <h2>My Projects</h2>
-            <div class="container">
 
-                <div class="project-body" id="Current">
-                    <div class="project-header">
-                        <h3 class="title">What Am I Working On Right Now?</h3>
-                    </div>
-                    <hr>
-                    <p>
-                        <b>Currently Reading:</b><br>
-                        Programming the ESP32 in C using the Espressif IDF - Harry Fairhead
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Active Projects:</b><br>
-                        - Designing a custom PCB for a 10W-175W speaker amplifier.<br>
-                        - Developing a PCB module integrated into air filters for automated 6-week maintenance reminders.<br>
-                        - Experimenting with small-scale ESP32 applications and embedded C drivers.
-                    </p>
-                </div>
+   <body>
+       <header>
+           <div class="container">
+               <h2 class="title" href="index.html">Bryan Gonzalez</h2>
+               <nav>|
+                   <a class="header-link" href="index.html">Home</a> |
+                   <a class="header-link" href="projects.html">Projects</a> |
+                   <a class="header-link" href="contact.html">Contact Me!</a> |
+               </nav>
+               <button class="hamburger">
+                   <div class="bar"></div>
+               </button>
+           </div>
+       </header>
+       <nav class="mobile-nav">
+           <a class="header-link" href="index.html">Home</a>
+           <a class="header-link" href="projects.html">Projects</a>
+           <a class="header-link" href="contact.html">Contact Me!</a> 
+       </nav>
+       <div class="jump-container">
+           <b>Jump To:</b>
+           <a href="#Current"><b>Current</b></a>
+           <a href="#RISCV"><b>RISCV Project</b></a>
+           <a href="#BeeMS"><b>BeeMS</b></a>
+           <a href="#AnalogLED"><b>Analog LED Controller</b></a>
+           <a href="#Guitar"><b>Automated Guitar Tuner</b></a>
+           <a href="#I2C"><b>I2C Module</b></a>
+           <a href="#IR"><b>IR Controller</b></a>
+           <a href="#Mechatronics"><b>Mechatronics</b></a>
+           <a href="#Calc"><b>Calculator</b></a>
+           <a href="#Calc-MC"><b>Calculator (Minecraft)</b></a>
+           <a href="#GBA-Repair"><b>GBA Repair</b></a>
+           <a href="#On-the-tip-of-my-tongue"> <b>On The Tip Of My Tongue</b></a>
+           <a href="#Music-matrix"><b>Music matrix</b></a>
+       </div>
+      
+       <main>
+           <h2>My Projects</h2>
+           <div class="container">
 
-                <div class="project-body" id="RISCV">
-                    <div class="project-header">
-                        <h3 class="title">RISCV Project</h3>
-                        <h3>April 28, 2026</h3>
-                    </div>
-                    <a href="https://github.com/glezbryan/RISCV">Github Repository</a>
-                    <hr>
-                    <p>
-                    <b>Language</b><br>
-                        System Verilog, C</p>
-                    <hr>
-                    <p>
-                    <b>Hardware</b><br>
-                        <a href="https://www.amd.com/en/corporate/university-program/aup-boards/blackboard.html">AMD Blackboard</a> - FPGA and Processor<br>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Description</b><br>
-                        A RISCV processor design focused strictly on hardware implementation. 
-                        The design uses the AMD Blackboard for the FPGA and features a 
-                        5-stage pipeline: Fetch, Decode, Execute, Memory, and Write Back. 
-                        It successfully operates on a 100MHz clock with no stepping down.
-                    </p>
-                </div>
 
-                <div class="project-body" id="BeeMS">
-                    <div class="project-header">
-                        <h3 class="title">BeeMS (Battery Monitoring System)</h3>
-                        <h3>April 24, 2026</h3>
-                    </div>
-                    <a href="https://github.com/Gregification/BeeMS">Github Repository</a>
-                    <a href="https://websites.uta.edu/cseseniordesign/2026/04/30/beems/">UTA Blog Post</a>
-                    <hr>
-                    <p>
-                        <b>Team Members</b><br>
-                        George Boone, Khai Nguyen, Roman Rattanakone, Zakir Muqueet, Jayde Brown
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Description</b><br>
-                        Developed and tested a custom Battery Monitoring System for an electric racecar as part of a Formula SAE team senior design project. The project involved working with freeRTOS, implementing cell balancing, learning to use KiCAD for PCB design, and designing components with Fusion 360.
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Reports</b><br>
-                        <a href="projects/BMS_CpE_conclusions.pdf">BMS_CpE_conclusions.pdf</a><br>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Demo Day Video</b>
-                    </p>
-                    <div class="project-image-container">
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/F64qCZF7GhY" title="Demo day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                    </div>
-                    <hr>
-                    <p>
-                        <b>Demo Day Setup</b>
-                    </p>
-                    <div class="project-image-container">
-                        <img src="images/BeeMS/DemoDay.jpg" alt="" class="project-image">
-                        <img src="images/BeeMS/FinalSetup.jpg" alt="" class="project-image">
-                        <img src="images/BeeMS/VoltageTap_Final.jpg" alt="" class="project-image">
-                        <img src="images/BeeMS/Masterboard_Final.jpg" alt="" class="project-image">
-                        <img src="images/BeeMS/Interconnectboard.jpg" alt="" class="project-image">
-                    </div>
-                    1.Poster  <br>
-                    2.Setup <br>
-                    3.Voltage Tap Board <br>
-                    4.Masterboard <br>
-                    5.Interconnect Board <br>
-                    <hr>
-                    <p>
-                        <b>External Cell Balancing Circuit</b>
-                    </p>
-                    <div class="project-image-container">
-                    <img src="images/BeeMS/External_Cell_Balancing.jpg" alt="" class="project-image">
-                    </div>
-                    <p>
-                        When the BQ chip detects that a cell is above the minimum threshold 
-                        for cell balancing and the delta between it and it's neighboring cell's 
-                        voltage is too high, it turns on it's internal MOSFET alowing the external
-                        MOSFET to also hit its Vgs threshold and draining the cell through the 
-                        15 ohm resistor.
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Last Voltage Tap Prototype before final version</b>
-                    </p>
-                    <div class="project-image-container">
-                        <img src="images/BeeMS/VoltageTap_Prototype.jpg" alt="" class="project-image">
-                    </div>
-                    <p>This one is special because this is the version I designed, ordered and
-                        assembled personally. I was really happy 
-                        when it spun to life and worked as intended.
-                    </p>
-                </div>
+               <div class="project-body" id="Current">
+                   <div class="project-header">
+                       <h3 class="title">What Am I Working On Right Now?</h3>
+                   </div>
+                   <hr>
+                   <p>
+                       <b>Currently Reading:</b><br>
+                       Programming the ESP32 in C using the Espressif IDF - Harry Fairhead
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Active Projects:</b><br>
+                       - Designing a custom PCB for a 10W-175W speaker amplifier.<br>
+                       - Developing a PCB module integrated into air filters for automated 6-week maintenance reminders.<br>
+                       - Experimenting with small-scale ESP32 applications and embedded C drivers.
+                   </p>
+               </div>
 
-                <div class="project-body" id="AnalogLED">
-                    <div class="project-header">
-                        <h3 class="title">Analog LED Controller</h3>
-                        <h3>January 2026</h3>
-                    </div>
-                    <hr>
-                    <p>
-                        <b>Hardware</b><br>
-                        Resistors, capacitors, BJTs, and op amps.
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Description</b><br>
-                        An analog LED strip controller built using only op amps and BJTs 
-                        without any ICs or microcontrollers. It features a PWM generator 
-                        using a circuit that creates a triangle wave compared against the 
-                        output of a 4-bit DAC. The current set up uses two 4-bit registers 
-                        made using just BJTs to store values for the red and blue LED strips 
-                        that feed into the DAC.
-                    </p>
-                    
-                    <hr>
-                    <p>
-                        <b>Videos</b><br>
-                    </p>
-                    <div class="project-image-container">
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/E6IE48K64qA" title="Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                        
-                        <iframe width="141" height="250" src="https://www.youtube.com/embed/Do3JCYkrKLI" title="Testing 2x4 bit register" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
 
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/zBOZq6ATunQ" title="Start" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                    
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/fIw5kwd4NDA" title="RS Latch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+               <div class="project-body" id="RISCV">
+                   <div class="project-header">
+                       <h3 class="title">RISCV Project</h3>
+                       <h3>April 28, 2026</h3>
+                   </div>
+                   <a href="https://github.com/glezbryan/RISCV">Github Repository</a>
+                   <hr>
+                   <p>
+                   <b>Language</b><br>
+                       System Verilog, C</p>
+                   <hr>
+                   <p>
+                   <b>Hardware</b><br>
+                       <a href="https://www.amd.com/en/corporate/university-program/aup-boards/blackboard.html">AMD Blackboard</a> - FPGA and Processor<br>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Description</b><br>
+                       A RISCV processor design focused strictly on hardware implementation.
+                       The design uses the AMD Blackboard for the FPGA and features a
+                       5-stage pipeline: Fetch, Decode, Execute, Memory, and Write Back.
+                       It successfully operates on a 100MHz clock with no stepping down.
+                   </p>
+               </div>
 
-                    </div>
-                </div>
 
-                <div class="project-body" id="Guitar">
-                    <div class="project-header">
-                        <h3 class="title"> Automated Guitar Tuner</h3>
-                        <h3>December 3, 2025</h3>
-                    </div>
-                    <div>
-                    <a href="https://github.com/glezbryan/Guitar-Tuner">Github Repository</a>
-                    <hr>
-                    <p>
-                    <b>Language</b><br>
-                        Embedded C
-                    </p>
-                    <hr>
-                    <p>
-                    <b>Hardware</b><br>
-                        <a href="https://www.st.com/en/evaluation-tools/nucleo-f446re.html">STM32F446RE Nucleo Board</a> - single-board STM32 microcontroller <br>
-                        <a href="https://dbunlimitedco.com/images/product_images/2D-Drawings/MW063002-2.pdf">MW063002-2</a> - Omnidirectional Electret Microphone<br>
-                        <a href="https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm358"> LM358</a> - Op Amp<br>
-                        <a href="https://www.ti.com/lit/ds/symlink/sn754410.pdf">N754410</a> - H-Bridge motor driver<br>
-                        <a href="https://www.amazon.com/dp/B0D22GZFPC?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1">NEMA 17</a> - Stepper Motor
-                    </p>
-                    <hr>
-                    <p>
-                    <b>Team Member(s)</b><br>
-                        Jordan Pinson
-                    </p>
-                    <hr>
-                    <p>
-                    <b>Description</b><br>
-                        The goal of this project was to make a guitar tuner that would 
-                        automatically drive the tuning pegs of a guitar using the 
-                        STM32F446RE Nucleo Board. The project used a basic 2 pin 
-                        mocrophone to capture the guitar being strum. The sound was 
-                        fed into an op amp to give it some gain and center it on the ADC 
-                        of STM32. In the software, the ADC would be sampled at a rate of 
-                        2048 Hz, stored in blocks of 2048 samples, and those samples were
-                        fed into an FFT using a Cooley-Tukey Algorithm. The peak of the 
-                        FFT would tell us what our fundamental frequency is (occasionally 
-                        the second fundamental). The goal was originally to make a full 
-                        PID to determine how many step for the motor to take but
-                        unfortunately, everything before this took up most of the time. 
-                        We had to cut is it down to just the proportional part of PID. 
-                        The delta of the current pitch and the target pitch was scaled 
-                        to the number of steps for the motor to take and the direction. 
-                        If there were any steps to take, a state machine would drive 
-                        the motor and thus the tuning peg.
-                    </p>
-                    <hr>
-                    <p>
-                    <b>More details and images can be found here:</b><br>
-                    <a href="projects/Embedded II - Final Project Report and Code.pdf">Project Report</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Circuit Diagrams</b>
+               <div class="project-body" id="BeeMS">
+                   <div class="project-header">
+                       <h3 class="title">BeeMS (Battery Monitoring System)</h3>
+                       <h3>April 24, 2026</h3>
+                   </div>
+                   <a href="https://github.com/Gregification/BeeMS">Github Repository</a>
+                   <a href="https://websites.uta.edu/cseseniordesign/2026/04/30/beems/">UTA Blog Post</a>
+                   <hr>
+                   <p>
+                       <b>Team Members</b><br>
+                       George Boone, Khai Nguyen, Roman Rattanakone, Zakir Muqueet, Jayde Brown
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Description</b><br>
+                       Developed and tested a custom Battery Monitoring System for an electric racecar as part of a Formula SAE team senior design project. The project involved working with freeRTOS, implementing cell balancing, learning to use KiCAD for PCB design, and designing components with Fusion 360.
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Reports</b><br>
+                       <a href="projects/BMS_CpE_conclusions.pdf">BMS_CpE_conclusions.pdf</a><br>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Demo Day Video</b>
+                   </p>
+                   <div class="project-image-container">
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/F64qCZF7GhY" title="Demo day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                   </div>
+                   <hr>
+                   <p>
+                       <b>Demo Day Setup</b>
+                   </p>
+                   <div class="project-image-container">
+                       <img src="images/BeeMS/DemoDay.jpg" alt="" class="project-image">
+                       <img src="images/BeeMS/FinalSetup.jpg" alt="" class="project-image">
+                       <img src="images/BeeMS/VoltageTap_Final.jpg" alt="" class="project-image">
+                       <img src="images/BeeMS/Masterboard_Final.jpg" alt="" class="project-image">
+                       <img src="images/BeeMS/Interconnectboard.jpg" alt="" class="project-image">
+                   </div>
+                   1.Poster  <br>
+                   2.Setup <br>
+                   3.Voltage Tap Board <br>
+                   4.Masterboard <br>
+                   5.Interconnect Board <br>
+                   <hr>
+                   <p>
+                       <b>External Cell Balancing Circuit</b>
+                   </p>
+                   <div class="project-image-container">
+                   <img src="images/BeeMS/External_Cell_Balancing.jpg" alt="" class="project-image">
+                   </div>
+                   <p>
+                       When the BQ chip detects that a cell is above the minimum threshold
+                       for cell balancing and the delta between it and it's neighboring cell's
+                       voltage is too high, it turns on its internal MOSFET allowing the external
+                       MOSFET to also hit its Vgs threshold and draining the cell through the
+                       15 ohm resistor.
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Last Voltage Tap Prototype before final version</b>
+                   </p>
+                   <div class="project-image-container">
+                       <img src="images/BeeMS/VoltageTap_Prototype.jpg" alt="" class="project-image">
+                   </div>
+                   <p>This one is special because this is the version I designed, ordered and
+                       assembled personally. I was really happy
+                       when it spun to life and worked as intended.
+                   </p>
+               </div>
 
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <img src="images/Tuner/Mic_Input.jpg" alt="" class="project-image">
-                            <img src="images/Tuner/Motor_Driver.jpg" alt="" class="project-image">
-                        </div><br>
-                        1. Microphone input<br>
-                        2. Motor driver output
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Microphone Outputs - Waveform and Fast Fourier Transform (FFT) Output)</b>
 
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <img src="images/Tuner/e_82.png" alt="" class="project-image">
-                            <img src="images/Tuner/a_110.png" alt="" class="project-image">
-                            <img src="images/Tuner/d_146.png" alt="" class="project-image">
-                            <img src="images/Tuner/g_196.png" alt="" class="project-image">
-                            <img src="images/Tuner/b_247.png" alt="" class="project-image">
-                            <img src="images/Tuner/e_330.png" alt="" class="project-image">
-                        </div>
-                        Order: E (82Hz), A (110Hz), D (146Hz), G (196Hz), B (247Hz), E (330Hz) <br>
-                        yellow: Waveform <br>
-                        white: FFT output
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Videos</b><br>
-                    </p>
-                    <div class="project-image-container">
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/m6a5H8whMyM" title="Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                        
-                        <iframe width="141" height="250" src="https://www.youtube.com/embed/7sgjfBa4F-o" title="Running Stepper Motor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+               <div class="project-body" id="AnalogLED">
+                   <div class="project-header">
+                       <h3 class="title">Analog LED Controller</h3>
+                       <h3>January 2026</h3>
+                   </div>
+                   <hr>
+                   <p>
+                       <b>Hardware</b><br>
+                       Resistors, capacitors, BJTs, and op amps.
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Description</b><br>
+                       An analog LED strip controller built using only op amps and BJTs
+                       without any ICs or microcontrollers. It features a PWM generator
+                       using a circuit that creates a triangle wave compared against the
+                       output of a 4-bit DAC. The current set up uses two 4-bit registers
+                       made using just BJTs to store values for the red and blue LED strips
+                       that feed into the DAC.
+                   </p>
+                  
+                   <hr>
+                   <p>
+                       <b>Videos</b><br>
+                   </p>
+                   <div class="project-image-container">
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/E6IE48K64qA" title="Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                      
+                       <iframe width="141" height="250" src="https://www.youtube.com/embed/Do3JCYkrKLI" title="Testing 2x4 bit register" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
 
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/gNjM00W6Mrk" title="Motor Driver Setup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                    
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/BWkXSCwImLQ" title="Checking frequencies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                        
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/pHxQSDdatx8" title="Mic outputs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
 
-                    </div>
-                    </div>
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/zBOZq6ATunQ" title="Start" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                  
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/fIw5kwd4NDA" title="RS Latch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
 
-                </div>
 
-                <div class="project-body" id="I2C">
-                    <div class="project-header">
-                        <h3 class="title">I2C Module</h3>
-                        <h3>December 2, 2025</h3>
-                    </div>
-                    <div>
-                    <a href="https://github.com/glezbryan/SOC-I2C-Module.git">Github Repository</a>
-                    <hr>
-                    <p>
-                    <b>Language</b><br>
-                        System Verilog, C</p>
-                    <hr>
-                    <p>
-                    <b>Hardware</b><br>
-                        <a href="https://www.amd.com/en/corporate/university-program/aup-boards/blackboard.html">AMD Blackboard</a> - FPGA and Processor<br>
-                        <a href="https://www.digikey.com/en/htmldatasheets/production/48622/0/0/1/mcp23008-e-p"> MCP23S08</a> - GPIO Expander(I2C device for testing)
-                    </p>
-                    <hr>
-                    <p>
-                    <b>Description</b><br>
-                        The goal of the project was to make an I2C module that could be interfaced using a
-                        AXI bus. The I2C module was designed to follow the standard for I2C protocol with the
-                        flexibillty of communication with simple or complex I2C devices (complex being devices
-                        with multiple registers). The module is interfaced using the AXI bus that connects the
-                        processor and the FPGA. Lastly, we created the drivers for the I2C module such that any
-                        program capable of reading and writing to a file can access and control the module.
-                    </p>
-                    <hr>
-                    <p>
-                    <b>More details and images can be found here:</b> <br>
-                    <a href="projects/CSE4356_REPORT_BRYAN_GONZALEZ.pdf">Project Report</a>
-                    </p>
-                    <hr>
-                    <div class="project-image-container">
-                        <img src="images/SoC/SOC_WaveForm.jpg" alt="" class="project-image">
-                        <img src="images/SoC/SOC_Setup.jpg" alt="" class="project-image">
-                    </div>
-                    <p>1. Waveform of the I2C Module communicating with the MCP23S08</p>
-                    <p>2. Home set up</p>
-                    </div>
-                </div>
+                   </div>
+               </div>
 
-                <div class="project-body" id="IR">
-                    <div class="project-header">
-                        <h3 class="title"> IR Transmitter/Reciever </h3>
-                        <h3>December 3, 2025</h3>
-                    </div>
-                    <a href="https://github.com/glezbryan/IR-Receiver-Transmitter">Github Repository</a>
-                    <hr>
-                    <b>Language</b><br>
-                        Embedded C <br>
-                    <hr>
-                    <p>
-                    <b>Description</b><br>
-                        This was one of my favorite projects because I was able to flex
-                        my electronics knowledge. The project was to make an embedded
-                        system using the EK-TM4C123GXL with an IR emmiter and reciever.
-                        The project used the NEC Infrared Transmission Protocol for
-                        transmissions and was tested with a TV at UTA. Multiple interupts
-                        were used as different threads to run things almost in parallel.
-                        Main was used for the Command line interface using UART to control
-                        transmissions. In the command line, a user could load two bytes
-                        into the transmission buffer for another thread to transmit. The
-                        user could also check if the most recent transmission received if 
-                        any. There were also some debug commands such as manually turning
-                        emiiter on and off or adjusting the brightness. On a seperate 
-                        thread, if there is data in the transmission buffer, a timer on an
-                        interrupt would change the state of the emmiter (ON/OFF) using 
-                        a state machine. The last thread used a 
-                        GPIO interrupt and would use a wide timer
-                        to get the time since the last GPIO interrupt and determine if
-                        the time matched a start bit, a '1', or a '0' of the NEC protocol.<br><br>
-                        The part I'm proudest of is the hardware. Emitter required a
-                        38kHz PWM when ON so the best solution was an 'AND gate' with GPIO
-                        for ON/OFF and the PWM. Most people used a AND gate IC to handle that
-                        but the emmiter reqired more current than what the IC could put out. 
-                        Everyone else used two BJTs as a low side switches to act as the AND 
-                        gate. They did however forget how BJTs worked and used some resistors
-                        in the kilo ohms for the base of the BJT and severly limitted thier
-                        current. I however used the formual Ib = Ic/Beta to use a more appropiate
-                        resisitor. I was the only person who did not need to be inches from the 
-                        TV to send a command. The furthest I got was about 15 feet from the TV.
-                        The curcuit used is shown below
-                    </p>
-                    <div class="project-image-container">
-                        <img src="images/SchematicDiagram.png" alt="" class="project-image">
-                        <img src="images/CircuitPicture-Front.jpg" alt="" class="project-image">
-                    </div>
-                </div>
 
-                <div class="project-body" id="Mechatronics">
-                    <div class="project-header">
-                        <h3 class="title">Mechatronics</h3>
-                        <h3>Fall 2025</h3>
-                    </div>
-                    <a href="https://github.com/glezbryan/mechatronics">Github Repository</a>
-                    <hr>
-                    <p>
-                        <b>Team Members</b><br>
-                        Jordan Pinson
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Hardware</b><br>
-                        TM4C123GH6PM Microcontroller, LIDAR Module (UART), Strain Gauges (Full-bridge/Half-bridge), Thermocouples, LC Sensors, Brushless DC (BLDC) Motors, Permanent Magnet DC (PMDC) Motors, Stepper Motors, Solenoids, Flyback Zener Diodes (1N5819, 1N5913), MOSFETs, Hall Effect Sensors, Optical Sensors, LEDs, and Oscilloscopes.
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Description</b><br>
-                        A comprehensive collection of mechatronics labs and mini-projects exploring the integration of hardware and software control systems. These projects utilize a TM4C123GH6PM microcontroller to interface with a variety of analog and digital sensors, control multiple motor types, and parse physical data ranging from temperature to spatial mapping.
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 01: Solenoid and Back-EMF</b><br>
-                        Explored the effects of back-EMF voltage spikes generated by a solenoid and tested various flyback zener diode configurations (such as 1N5819 and 1N5913) to mitigate damage. The system was ultimately controlled using a TM4C123GH6PM driving a MOSFET.<br>
-                        <a href="projects/Mechatronics-Lab01.pdf">Lab 01 Report</a>
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <iframe width="444" height="250" src="https://www.youtube.com/embed/wPKyew1gJLU" title="Solenoid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                        </div>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 02: Stepper Motor</b><br>
-                        Calculated holding torque based on varying voltages and demonstrated step control by driving the stepper motor coils using a TM4C123GH6PM.<br>
-                        <a href="projects/Mechatronics-Lab02.pdf">Lab 02 Report</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 03: PMDC with Back-Emf Speed Sensing</b><br>
-                        Controlled a PMDC motor utilizing a PWM signal and measured its RPM by comparing data from an optical sensor and back-EMF voltage calculations.<br>
-                        <a href="projects/Mechatronics-Lab03.pdf">Lab 03 Report</a>
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <iframe width="444" height="250" src="https://www.youtube.com/embed/tqz18HX0h-w" title="PMDC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                        </div>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 04: BLDC Motor</b><br>
-                        Operated a Brushless DC (BLDC) motor directly and via a TM4C123GH6PM microcontroller, utilizing Hall effect sensors to accurately determine the coil activation sequences.<br>
-                        <a href="projects/Mechatronics-LabReport-Lab04.pdf">Lab 04 Report</a>
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <iframe width="444" height="250" src="https://www.youtube.com/embed/ZYoojrl0ps8" title="BLDC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                        </div>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 05: LC Sensor Measurement</b><br>
-                        Designed and tested an LC sensor for dual applications: measuring liquid volume levels in milliliters and functioning as a metal detector with frequency-based LED color indicators.<br>
-                        <a href="projects/Mechatronics-LabReport-Lab05.pdf">Lab 05 Report</a>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 06: Thermocouple Measurements</b><br>
-                        Implemented lookup tables and interpolation in C to calibrate a thermocouple, successfully recording extreme temperatures from dry ice (-73.1°C) to a hot soldering iron (101.1°C).<br>
-                        <a href="projects/Mechatronics-LabReport-Lab06.pdf">Lab 06 Report</a>
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <img src="images/Mechatronics/tc-ice_water.jpg" alt="" class="project-image">
-                            <img src="images/Mechatronics/tc-soldering_iron.jpg" alt="" class="project-image">
-                            <img src="images/Mechatronics/tc-dry_ice.jpg" alt="" class="project-image">
-                            <img src="images/Mechatronics/tc-setup.jpg" alt="" class="project-image">
-                        </div>
-                        1. Measuring ice water temp (1.50 degC)<br>
-                        2. Measuring soldering iron (101.06 degC)<br>
-                        3. Measuring dry ice (-73.12 degC)<br>
-                        4. Thermocouple Setup
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 07: Strain Gauge Measurements</b><br>
-                        Calibrated a strain gauge using known masses to measure force in Newtons and identified structural fixes for axial strain interference using full-bridge or half-bridge configurations.<br>
-                        <a href="projects/Mechatronics-LabReport-Lab07.pdf">Lab 07 Report</a>
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <img src="images/Mechatronics/strain_guage-setup.jpg" alt="" class="project-image">
-                            <img src="images/Mechatronics/strain_guage-HX711_output .jpg" alt="" class="project-image">
-                        </div>
-                        1. Stain Guage Setup <br>
-                        2. HX711 output
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Lab 08: LIDAR</b><br>
-                        Interfaced a LIDAR module using UART to scan a physical space, storing and sorting the collected angle and distance data to calculate the total scanned area.<br>
-                        <a href="projects/Mechatronics-LabReport-Lab08.pdf">Lab 08 Report</a> <br>
-                        <a href="projects/LIDAR_OUTPUT.xlsx">LIDAR Output (xlsx)</a>
-                        <br>
-                        <br>
-                        <div class="project-image-container">
-                            <img src="images/Mechatronics/LIDAR_OUTPUT.png" alt="" class="project-image">
-                        </div>
-                    </p>
-                </div>
+               <div class="project-body" id="Guitar">
+                   <div class="project-header">
+                       <h3 class="title"> Automated Guitar Tuner</h3>
+                       <h3>December 3, 2025</h3>
+                   </div>
+                   <div>
+                   <a href="https://github.com/glezbryan/Guitar-Tuner">Github Repository</a>
+                   <hr>
+                   <p>
+                   <b>Language</b><br>
+                       Embedded C
+                   </p>
+                   <hr>
+                   <p>
+                   <b>Hardware</b><br>
+                       <a href="https://www.st.com/en/evaluation-tools/nucleo-f446re.html">STM32F446RE Nucleo Board</a> - single-board STM32 microcontroller <br>
+                       <a href="https://dbunlimitedco.com/images/product_images/2D-Drawings/MW063002-2.pdf">MW063002-2</a> - Omnidirectional Electret Microphone<br>
+                       <a href="https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm358"> LM358</a> - Op Amp<br>
+                       <a href="https://www.ti.com/lit/ds/symlink/sn754410.pdf">N754410</a> - H-Bridge motor driver<br>
+                       <a href="https://www.amazon.com/dp/B0D22GZFPC?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1">NEMA 17</a> - Stepper Motor
+                   </p>
+                   <hr>
+                   <p>
+                   <b>Team Member(s)</b><br>
+                       Jordan Pinson
+                   </p>
+                   <hr>
+                   <p>
+                   <b>Description</b><br>
+                       The goal of this project was to make a guitar tuner that would
+                       automatically drive the tuning pegs of a guitar using the
+                       STM32F446RE Nucleo Board. The project used a basic 2 pin
+                       microphone to capture the guitar being strum. The sound was
+                       fed into an op amp to give it some gain and center it on the ADC
+                       of STM32. In the software, the ADC would be sampled at a rate of
+                       2048 Hz, stored in blocks of 2048 samples, and those samples were
+                       fed into an FFT using a Cooley-Tukey Algorithm. The peak of the
+                       FFT would tell us what our fundamental frequency is (occasionally
+                       the second fundamental). The goal was originally to make a full
+                       PID to determine how many steps for the motor to take but
+                       unfortunately, everything before this took up most of the time.
+                       We had to cut it down to just the proportional part of PID.
+                       The delta of the current pitch and the target pitch was scaled
+                       to the number of steps for the motor to take and the direction.
+                       If there were any steps to take, a state machine would drive
+                       the motor and thus the tuning peg.
+                   </p>
+                   <hr>
+                   <p>
+                   <b>More details and images can be found here:</b><br>
+                   <a href="projects/Embedded II - Final Project Report and Code.pdf">Project Report</a>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Circuit Diagrams</b>
 
-                <div class="project-body" id="Calc">
-                    <div class="project-header">
-                        <h3 class="title"> 8-Bit Two Function Calculator</h3>
-                        <h3>December 15, 2024</h3>
-                    </div>
-                    <a href=""></a>
-                    <hr>
-                    <p>
-                    <b>Language</b><br>
-                        System Verilog</p>
-                    <hr>
-                    <p>
-                    <b>Hardware</b><br>
-                        <a href="https://www.altera.com/asap/offering/po-2853/max-10-device-family-de10-lite-board"> DE10-Lite</a> - Altera FPGA<br>
-                    </p>
-                    <hr>
-                    <p>
-                    <b>Description</b><br>
-                        The project was the use Verilog to create an 8-Bit Two Function 
-                        Calculator. The project consisted of 4 main modules: an 
-                        Arithmetic Unit (AU), a Input Unit (IU), an Output Unit (OU) and 
-                        a Control Unit (CU).
-                        The AU is capable of addition and subtraction. For addition, full adders
-                        with carry outs linked accross were used. For Subtraction, the carry in
-                        for the first full adder was set to '1' and a hald adder adjusts the subtrahend.
-                        The IU uses a 4x4 keyboard and the IU scan the rows and colombs to determine 
-                        which key is seleted. The OU uses a barrel shifter to convert from binary to
-                        BCD which is then converted to a format for a seven segment display. The display
-                        has a common cathode so the 4 values are stored in registers and they are cycled 
-                        through and every display is being turned on one at a time really quick to 
-                        give the appearance that they are all on. The CU uses a state machine to 
-                        drive where we are in the operation. The module implementations are in the
-                        report in more detail.
-                    </p>
-                    <hr>
-                    <b>Multiplexed Display</b><br>
-                    The frame rate of my camera was faster than the display was cycling
-                    throught the digits. Thought it was interesting.
-                    <div class="project-image-container">
-                        <img src="images/TermProject/IMG_3841.JPG" alt="" class="project-image">
-                        <img src="images/TermProject/IMG_3842.JPG" alt="" class="project-image">
-                        <img src="images/TermProject/IMG_3843.JPG" alt="" class="project-image">
-                        <img src="images/TermProject/IMG_3844.JPG" alt="" class="project-image">
-                    </div>
-                    <hr>
-                    <b>More details and images can be found here:</b> <br>
-                    <a href="projects/TermProject-Report-BryanGonzalez.pdf">Project Report</a>
-                    </p>
-                </div>
 
-                <div class="project-body" id="Calc-MC">
-                    <div class="project-header">
-                        <h3 class="title"> 8-Bit Two Function Calculator (Minecraft)</h3>
-                        <h3>December 15, 2024</h3>
-                    </div>
-                    <a href="https://1drv.ms/f/c/b882d57b518c0db2/IgAyc0RXZ3aWQJK84sEJGPaHAT8VZw_GZx_GO1v5XOE3Hj4?e=5d6nQg">
-                        World Download (OneDrive)
-                    </a>
-                    <hr>
-                    <p>
-                    <b>Description</b><br>
-                    <p>
-                        This was a fun project I did while taking digital logic at UTA.
-                        As we completed labs on the Altera board, I would go into this
-                        Minecraft world and try to recreate the lab that week. Each lab is 
-                        labeled accordingly with signs. The goal was to complete the final
-                        project, the calculator, using nothing but redstone. No command blocks
-                        or mods. The project was difficult because as a multiplexer in Verilog
-                        is just a couple of case statements, it was 8 or 16 AND gates depending
-                        on the inputs. The hardest parts were the barrel shifter and the BCD
-                        to binary converter. The barrel shifter was difficult just because
-                        of the sheer size of it. The converter was difficult the second digit
-                        had to be multiplied by 10 and the third by 100. In Verilog, we just
-                        used the multiplication operator which does not exist in Minecraft. I
-                        figured out I could use a matrix of AND gates and add all the rows together
-                        using a bunch of full adders just like you would if you were 
-                        multiplying by hand and that worked. Despite the difficulties,
-                        I did complete the calculator. It's a little slow but that's just 
-                        because Minecraft operates at 20 ticks a second and every gate takes
-                        about 1-2 ticks. There are some optimizations I could have made but I
-                        wanted to stay as close to source material as possible.
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Image</b>
-                    </p>
-                    <div class="project-image-container">
-                        <img src="images/MC_Calculator.jpg" alt="" class="project-image">
-                    </div>
-                    <p>Cverall Design</p>
-                    <hr>
-                    <p>
-                        <b>Video</b>
-                    </p>
-                    <div class="project-image-container">
-                        <iframe width="444" height="250" src="https://www.youtube.com/embed/sQLFBD-WZl4" title="Running Calculator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
-                    </div>
-                    <p> Showing Clear and Running "57 - 61 = -4" </p>
-                </div>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <img src="images/Tuner/Mic_Input.jpg" alt="" class="project-image">
+                           <img src="images/Tuner/Motor_Driver.jpg" alt="" class="project-image">
+                       </div><br>
+                       1. Microphone input<br>
+                       2. Motor driver output
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Microphone Outputs - Waveform and Fast Fourier Transform (FFT) Output)</b>
 
-                <div class="project-body" id="GBA-Repair">
-                    <div class="project-header">
-                        <h3 class="title">Game Boy Advance Repair</h3>
-                        <h3>January 26, 2024</h3>
-                    </div>
-                    <hr>
-                    <p>
-                        A while ago I found a Game Boy Advance (GBA) in a poor condition. I grew up loving the GBA so 
-                        I figured it would be fun side project to repair and refurbish it.
-                    </p><hr>
-                    Initial GBA damage:
-                    <p style="margin: 0px 40px;">
-                        - Will not stay on for longer than a second. <br>
-                        - Screen would not turn on. <br>
-                        - heavy damage to shell <br><br>
-                    </p>
-                    <div class="project-image-container">
-                        <img src="images/GBA-Initial-State (1).jpg" alt="" class="project-image">
-                        <img src="images/GBA-Initial-State (2).jpg" alt="" class="project-image">
-                        <img src="images/GBA-Initial-State (3).jpg" alt="" class="project-image">
-                        <img src="images/GBA-Initial-State (4).jpg" alt="" class="project-image">
-                    </div>
-                    <hr>
-                    <p>
-                        Ordered a new battery and shell. <br>
-                        GBA will now stay on but still no display
-                    </p><hr>
-                    <p>
-                        I took the GBA out of it's shell. <br>
-                        The ribbon cable that connects to the screen was loose so reattaching it fixed the issue. All that is left is to put the GBA into its new shell. 
-                    </p>
-                    <div class="project-image-container">
-                        <img src="images/GBA-State-1-23-24.jpg" alt="" class="project-image">
-                        <img src="images/GBA_Testing.jpg" alt="" class="project-image">
-                    </div><hr>
-                    <p>
-                        Finished!
-                    </p>
-                    <p style="margin: 0px 40px;">
-                        - Game slot funtions. <br>
-                        - All buttons tested. <br>
-                        - Charging and link port tested.<br>
-                        - Sound and volume setting tested.<br>
-                        - Everything is in order.
-                    </p>
-                    <div class="project-image-container">
-                        <img src="images/GBA-Complete.jpg" alt="" class="project-image">
-                        <img src="images/GBA-Running.jpg" alt="" class="project-image">
-                    </div>
-                </div>
-                <div class="project-body" id="On-the-tip-of-my-tongue">
-                    <div class="project-header">
-                        <h3 class="title"> On The Tip Of My Tongue</h3>
-                        <h3>November 28, 2023</h3>
-                    </div>
-                    <a href="https://github.com/glezbryan/On-the-tip-of-my-tongue/">Github Repository</a>
-                    <hr>
-                    <p>
-                        <b>Language</b><br>
-                        Java 
-                        <hr>
-                        <b>Description</b><br>
-                        For my Object-Oriented Programming final project, I created an engaging and interactive game inspired by Wordle, incorporating different difficulty levels to enhance the player experience. The project was undertaken with minimal instructions, providing the freedom to explore creative solutions and apply various programming concepts.
-                        <hr>
-                        <b>Key Features </b>
-                    </p>
-                    <p style="margin: 0px 40px;">
-                        <b>1. Gameplay Mechanics </b><br>
-                        - The game is structured with three difficulty levels - Easy, Medium, and Hard.<br>
-                        - Each difficulty level corresponds to a specific word length (5, 6, and 7 letters, respectively).<br>
-                        - Players are given a set number of guesses based on the difficulty level, adding a strategic element to the gameplay.
-                        <br><br>
-                        <b>2. Graphical User Interface (GUI) </b><br>
-                        - The project utilizes the Swing library to create a user-friendly GUI.<br>
-                        - The GUI enhances the gaming experience by providing a visually appealing and intuitive interface.
-                        <br><br>
-                        <b>3. File Handling </b><br>
-                        - A key aspect of the project involved working with text files to read word libraries for each difficulty level.<br>
-                        - This allowed for a dynamic and easily updatable system for word choices, adding an element of variety to the gameplay.
-                        <br><br>
-                        <b>4. JPanel with Card Layout </b><br>
-                        - One of the standout features of the project is the implementation of a JPanel with a Card Layout.<br>
-                        - This layout efficiently manages multiple panels, facilitating seamless transitions between different menus within the game.
-                        <br>
-                    </p>
-                    <hr>
-                    <p>
-                        <b>Challenges and Learnings </b><br>
-                        While the project was a success overall, it was not without its challenges. The choice of word libraries posed a significant challenge, with the 6-letter word list being too extensive and including obscure words, while the 7-letter word list was too limited, resulting in some common words being excluded.
-                        <hr>
-                        <b>Conclusion </b><br>
-                        The Wordle Challenge Game is a testament to the creativity and problem-solving skills applied in an object-oriented programming context. The use of GUI, file handling, and innovative layout management contribute to a polished and enjoyable gaming experience. The project showcases the ability to overcome challenges and highlights areas for potential improvements in future iterations.
-                        <br><br>
-                        Grade: 18/18
-                    </p>
-                </div>
 
-                <div class="project-body" id="Music-matrix">
-                    <div class="project-header">
-                        <h3 class="title">Music Matrix</h3>
-                        <h3>2019</h3>
-                    </div>
-                    <a href="projects/MusicMatrix.c">MusicMatrix.c</a>
-                    <hr>
-                    <p>
-                        <b>Language</b><br>
-                        C
-                        <hr>
-                        <b>Description</b><br>
-                        As a former music major delving into post-tonal theory, I developed a simple yet effective terminal-based program for analyzing 12-tone music using matrices. Inspired by the principles of post-tonal theory and matrix analysis, this program provides a straightforward tool for music theorists and composers interested in exploring this avant-garde style.
-                        <hr>
-                        <b>Key Features</b>
-                    </p>
-                    <p style="margin: 0px 40px;">
-                        <b>1. Matrix Generation</b><br>
-                        The program takes a 12-tone series (the prime row) as input.
-                        <br><br>
-                        <b>2. Matrix Display</b><br>
-                        It constructs and prints out the full matrix for analysis.
-                        <br><br>
-                        <b>3. Chromatic Representation</b><br>
-                        Pitch values are represented in ascending chromatic order, starting from 'C' as 0 and incrementing by semitones. To maintain single-digit representations, 'T' stands for 10 (representing B♭/A#) and 'E' represents 11 (representing B natural).
-                        <br><br>
-                    </p>
-                    <hr>
-                    <p><b>Usage Example</b></p>
-                    <div class="project-image-container">
-                        <img src="images/MusicMatrix.png" alt="Music Matrix">
-                    </div>
-                    <p>
-                        The program generates and displays the corresponding matrix for analysis.<br>
-                        <hr>
-                        <b>Learn More</b><br>
-                        For those interested in learning more about matrices in post-tonal music theory further, <a href="https://musictheory.pugetsound.edu/mt21c/section-194.html">click here</a> to learn more!
-                    </p>
-                        
-                </div>
-            </div>
-        </main>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <img src="images/Tuner/e_82.png" alt="" class="project-image">
+                           <img src="images/Tuner/a_110.png" alt="" class="project-image">
+                           <img src="images/Tuner/d_146.png" alt="" class="project-image">
+                           <img src="images/Tuner/g_196.png" alt="" class="project-image">
+                           <img src="images/Tuner/b_247.png" alt="" class="project-image">
+                           <img src="images/Tuner/e_330.png" alt="" class="project-image">
+                       </div>
+                       Order: E (82Hz), A (110Hz), D (146Hz), G (196Hz), B (247Hz), E (330Hz) <br>
+                       yellow: Waveform <br>
+                       white: FFT output
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Videos</b><br>
+                   </p>
+                   <div class="project-image-container">
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/m6a5H8whMyM" title="Final" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                      
+                       <iframe width="141" height="250" src="https://www.youtube.com/embed/7sgjfBa4F-o" title="Running Stepper Motor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
 
-        <footer>
-            <p>
-                Bryan Gonzalez<br>
-                Email: <a href="mailto: glezbryan12@gmail.com">glezbryan12@gmail.com</a><br>
-                2026
-            </p>
-            <nav>
-                <a href="index.html"><br>Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact Me!</a>
-            </nav>
-        </footer>
-        <script src="js/index.js"></script>
-    </body>
+
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/gNjM00W6Mrk" title="Motor Driver Setup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                  
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/BWkXSCwImLQ" title="Checking frequencies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                      
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/pHxQSDdatx8" title="Mic outputs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+
+
+                   </div>
+                   </div>
+
+
+               </div>
+
+
+               <div class="project-body" id="I2C">
+                   <div class="project-header">
+                       <h3 class="title">I2C Module</h3>
+                       <h3>December 2, 2025</h3>
+                   </div>
+                   <div>
+                   <a href="https://github.com/glezbryan/SOC-I2C-Module.git">Github Repository</a>
+                   <hr>
+                   <p>
+                   <b>Language</b><br>
+                       System Verilog, C</p>
+                   <hr>
+                   <p>
+                   <b>Hardware</b><br>
+                       <a href="https://www.amd.com/en/corporate/university-program/aup-boards/blackboard.html">AMD Blackboard</a> - FPGA and Processor<br>
+                       <a href="https://www.digikey.com/en/htmldatasheets/production/48622/0/0/1/mcp23008-e-p"> MCP23S08</a> - GPIO Expander(I2C device for testing)
+                   </p>
+                   <hr>
+                   <p>
+                   <b>Description</b><br>
+                       The goal of the project was to make an I2C module that could be interfaced using a
+                       AXI bus. The I2C module was designed to follow the standard for I2C protocol with the
+                       flexibility of communication with simple or complex I2C devices (complex being devices
+                       with multiple registers). The module is interfaced using the AXI bus that connects the
+                       processor and the FPGA. Lastly, we created the drivers for the I2C module such that any
+                       program capable of reading and writing to a file can access and control the module.
+                   </p>
+                   <hr>
+                   <p>
+                   <b>More details and images can be found here:</b> <br>
+                   <a href="projects/CSE4356_REPORT_BRYAN_GONZALEZ.pdf">Project Report</a>
+                   </p>
+                   <hr>
+                   <div class="project-image-container">
+                       <img src="images/SoC/SOC_WaveForm.jpg" alt="" class="project-image">
+                       <img src="images/SoC/SOC_Setup.jpg" alt="" class="project-image">
+                   </div>
+                   <p>1. Waveform of the I2C Module communicating with the MCP23S08</p>
+                   <p>2. Home set up</p>
+                   </div>
+               </div>
+
+
+               <div class="project-body" id="IR">
+                   <div class="project-header">
+                       <h3 class="title"> IR Transmitter/Reciever </h3>
+                       <h3>December 3, 2025</h3>
+                   </div>
+                   <a href="https://github.com/glezbryan/IR-Receiver-Transmitter">Github Repository</a>
+                   <hr>
+                   <b>Language</b><br>
+                       Embedded C <br>
+                   <hr>
+                   <p>
+                   <b>Description</b><br>
+                       This was one of my favorite projects because I was able to flex
+                       my electronics knowledge. The project was to make an embedded
+                       system using the EK-TM4C123GXL with an IR emitter and receiver.
+                       The project used the NEC Infrared Transmission Protocol for
+                       transmissions and was tested with a TV at UTA. Multiple interrupts
+                       were used as different threads to run things almost in parallel.
+                       Main was used for the Command line interface using UART to control
+                       transmissions. In the command line, a user could load two bytes
+                       into the transmission buffer for another thread to transmit. The
+                       user could also check if the most recent transmission received if
+                       any. There were also some debug commands such as manually turning
+                       emitter on and off or adjusting the brightness. On a separate
+                       thread, if there is data in the transmission buffer, a timer on an
+                       interrupt would change the state of the emitter (ON/OFF) using
+                       a state machine. The last thread used a
+                       GPIO interrupt and would use a wide timer
+                       to get the time since the last GPIO interrupt and determine if
+                       the time matched a start bit, a '1', or a '0' of the NEC protocol.<br><br>
+                       The part I'm proudest of is the hardware. Emitter required a
+                       38kHz PWM when ON so the best solution was an 'AND gate' with GPIO
+                       for ON/OFF and the PWM. Most people used a AND gate IC to handle that
+                       but the emitter required more current than what the IC could put out.
+                       Everyone else used two BJTs as a low side switches to act as the AND
+                       gate. They did however forget how BJTs worked and used some resistors
+                       in the kilo ohms for the base of the BJT and severely limited their
+                       current. I however used the formula Ib = Ic/Beta to use a more appropriate
+                       resistor. I was the only person who did not need to be inches from the
+                       TV to send a command. The furthest I got was about 15 feet from the TV.
+                       The circuit used is shown below.
+                   </p>
+                   <div class="project-image-container">
+                       <img src="images/SchematicDiagram.png" alt="" class="project-image">
+                       <img src="images/CircuitPicture-Front.jpg" alt="" class="project-image">
+                   </div>
+               </div>
+
+
+               <div class="project-body" id="Mechatronics">
+                   <div class="project-header">
+                       <h3 class="title">Mechatronics</h3>
+                       <h3>Fall 2025</h3>
+                   </div>
+                   <a href="https://github.com/glezbryan/mechatronics">Github Repository</a>
+                   <hr>
+                   <p>
+                       <b>Team Members</b><br>
+                       Jordan Pinson
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Hardware</b><br>
+                       TM4C123GH6PM Microcontroller, LIDAR Module (UART), Strain Gauges (Full-bridge/Half-bridge), Thermocouples, LC Sensors, Brushless DC (BLDC) Motors, Permanent Magnet DC (PMDC) Motors, Stepper Motors, Solenoids, Flyback Zener Diodes (1N5819, 1N5913), MOSFETs, Hall Effect Sensors, Optical Sensors, LEDs, and Oscilloscopes.
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Description</b><br>
+                       A comprehensive collection of mechatronics labs and mini-projects exploring the integration of hardware and software control systems. These projects utilize a TM4C123GH6PM microcontroller to interface with a variety of analog and digital sensors, control multiple motor types, and parse physical data ranging from temperature to spatial mapping.
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 01: Solenoid and Back-EMF</b><br>
+                       Explored the effects of back-EMF voltage spikes generated by a solenoid and tested various flyback zener diode configurations (such as 1N5819 and 1N5913) to mitigate damage. The system was ultimately controlled using a TM4C123GH6PM driving a MOSFET.<br>
+                       <a href="projects/Mechatronics-Lab01.pdf">Lab 01 Report</a>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <iframe width="444" height="250" src="https://www.youtube.com/embed/wPKyew1gJLU" title="Solenoid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                       </div>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 02: Stepper Motor</b><br>
+                       Calculated holding torque based on varying voltages and demonstrated step control by driving the stepper motor coils using a TM4C123GH6PM.<br>
+                       <a href="projects/Mechatronics-Lab02.pdf">Lab 02 Report</a>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 03: PMDC with Back-Emf Speed Sensing</b><br>
+                       Controlled a PMDC motor utilizing a PWM signal and measured its RPM by comparing data from an optical sensor and back-EMF voltage calculations.<br>
+                       <a href="projects/Mechatronics-Lab03.pdf">Lab 03 Report</a>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <iframe width="444" height="250" src="https://www.youtube.com/embed/tqz18HX0h-w" title="PMDC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                       </div>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 04: BLDC Motor</b><br>
+                       Operated a Brushless DC (BLDC) motor directly and via a TM4C123GH6PM microcontroller, utilizing Hall effect sensors to accurately determine the coil activation sequences.<br>
+                       <a href="projects/Mechatronics-LabReport-Lab04.pdf">Lab 04 Report</a>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <iframe width="444" height="250" src="https://www.youtube.com/embed/ZYoojrl0ps8" title="BLDC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                       </div>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 05: LC Sensor Measurement</b><br>
+                       Designed and tested an LC sensor for dual applications: measuring liquid volume levels in milliliters and functioning as a metal detector with frequency-based LED color indicators.<br>
+                       <a href="projects/Mechatronics-LabReport-Lab05.pdf">Lab 05 Report</a>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 06: Thermocouple Measurements</b><br>
+                       Implemented lookup tables and interpolation in C to calibrate a thermocouple, successfully recording extreme temperatures from dry ice (-73.1°C) to a hot soldering iron (101.1°C).<br>
+                       <a href="projects/Mechatronics-LabReport-Lab06.pdf">Lab 06 Report</a>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <img src="images/Mechatronics/tc-ice_water.jpg" alt="" class="project-image">
+                           <img src="images/Mechatronics/tc-soldering_iron.jpg" alt="" class="project-image">
+                           <img src="images/Mechatronics/tc-dry_ice.jpg" alt="" class="project-image">
+                           <img src="images/Mechatronics/tc-setup.jpg" alt="" class="project-image">
+                       </div>
+                       1. Measuring ice water temp (1.50 degC)<br>
+                       2. Measuring soldering iron (101.06 degC)<br>
+                       3. Measuring dry ice (-73.12 degC)<br>
+                       4. Thermocouple Setup
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 07: Strain Gauge Measurements</b><br>
+                       Calibrated a strain gauge using known masses to measure force in Newtons and identified structural fixes for axial strain interference using full-bridge or half-bridge configurations.<br>
+                       <a href="projects/Mechatronics-LabReport-Lab07.pdf">Lab 07 Report</a>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <img src="images/Mechatronics/strain_guage-setup.jpg" alt="" class="project-image">
+                           <img src="images/Mechatronics/strain_guage-HX711_output .jpg" alt="" class="project-image">
+                       </div>
+                       1. Stain Gauge Setup <br>
+                       2. HX711 output
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Lab 08: LIDAR</b><br>
+                       Interfaced a LIDAR module using UART to scan a physical space, storing and sorting the collected angle and distance data to calculate the total scanned area.<br>
+                       <a href="projects/Mechatronics-LabReport-Lab08.pdf">Lab 08 Report</a> <br>
+                       <a href="projects/LIDAR_OUTPUT.xlsx">LIDAR Output (xlsx)</a>
+                       <br>
+                       <br>
+                       <div class="project-image-container">
+                           <img src="images/Mechatronics/LIDAR_OUTPUT.png" alt="" class="project-image">
+                       </div>
+                   </p>
+               </div>
+
+
+               <div class="project-body" id="Calc">
+                   <div class="project-header">
+                       <h3 class="title"> 8-Bit Two Function Calculator</h3>
+                       <h3>December 15, 2024</h3>
+                   </div>
+                   <a href=""></a>
+                   <hr>
+                   <p>
+                   <b>Language</b><br>
+                       System Verilog</p>
+                   <hr>
+                   <p>
+                   <b>Hardware</b><br>
+                       <a href="https://www.altera.com/asap/offering/po-2853/max-10-device-family-de10-lite-board"> DE10-Lite</a> - Altera FPGA<br>
+                   </p>
+                   <hr>
+                   <p>
+                   <b>Description</b><br>
+                       The project was the use Verilog to create an 8-Bit Two Function
+                       Calculator. The project consisted of 4 main modules: an
+                       Arithmetic Unit (AU), a Input Unit (IU), an Output Unit (OU) and
+                       a Control Unit (CU).
+                       The AU is capable of addition and subtraction. For addition, full adders
+                       with carry outs linked across were used. For Subtraction, the carry in
+                       for the first full adder was set to '1' and a half adder adjusts the subtrahend.
+                       The IU uses a 4x4 keyboard and the IU scan the rows and column to determine
+                       which key is selected. The OU uses a barrel shifter to convert from binary to
+                       BCD which is then converted to a format for a seven segment display. The display
+                       has a common cathode so the 4 values are stored in registers and they are cycled
+                       through and every display is being turned on one at a time really quick to
+                       give the appearance that they are all on. The CU uses a state machine to
+                       drive where we are in the operation. The module implementations are in the
+                       report in more detail.
+                   </p>
+                   <hr>
+                   <b>Multiplexed Display</b><br>
+                   The frame rate of my camera was faster than the display was cycling
+                   throught the digits. Thought it was interesting.
+                   <div class="project-image-container">
+                       <img src="images/TermProject/IMG_3841.JPG" alt="" class="project-image">
+                       <img src="images/TermProject/IMG_3842.JPG" alt="" class="project-image">
+                       <img src="images/TermProject/IMG_3843.JPG" alt="" class="project-image">
+                       <img src="images/TermProject/IMG_3844.JPG" alt="" class="project-image">
+                   </div>
+                   <hr>
+                   <b>More details and images can be found here:</b> <br>
+                   <a href="projects/TermProject-Report-BryanGonzalez.pdf">Project Report</a>
+                   </p>
+               </div>
+
+
+               <div class="project-body" id="Calc-MC">
+                   <div class="project-header">
+                       <h3 class="title"> 8-Bit Two Function Calculator (Minecraft)</h3>
+                       <h3>December 15, 2024</h3>
+                   </div>
+                   <a href="https://1drv.ms/f/c/b882d57b518c0db2/IgAyc0RXZ3aWQJK84sEJGPaHAT8VZw_GZx_GO1v5XOE3Hj4?e=5d6nQg">
+                       World Download (OneDrive)
+                   </a>
+                   <hr>
+                   <p>
+                   <b>Description</b><br>
+                   <p>
+                       This was a fun project I did while taking digital logic at UTA.
+                       As we completed labs on the Altera board, I would go into this
+                       Minecraft world and try to recreate the lab that week. Each lab is
+                       labeled accordingly with signs. The goal was to complete the final
+                       project, the calculator, using nothing but redstone. No command blocks
+                       or mods. The project was difficult because as a multiplexer in Verilog
+                       is just a couple of case statements, it was 8 or 16 AND gates depending
+                       on the inputs. The hardest parts were the barrel shifter and the BCD
+                       to binary converter. The barrel shifter was difficult just because
+                       of the sheer size of it. The converter was difficult the second digit
+                       had to be multiplied by 10 and the third by 100. In Verilog, we just
+                       used the multiplication operator which does not exist in Minecraft. I
+                       figured out I could use a matrix of AND gates and add all the rows together
+                       using a bunch of full adders just like you would if you were
+                       multiplying by hand and that worked. Despite the difficulties,
+                       I did complete the calculator. It's a little slow but that's just
+                       because Minecraft operates at 20 ticks a second and every gate takes
+                       about 1-2 ticks. There are some optimizations I could have made but I
+                       wanted to stay as close to source material as possible.
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Image</b>
+                   </p>
+                   <div class="project-image-container">
+                       <img src="images/MC_Calculator.jpg" alt="" class="project-image">
+                   </div>
+                   <p>Cverall Design</p>
+                   <hr>
+                   <p>
+                       <b>Video</b>
+                   </p>
+                   <div class="project-image-container">
+                       <iframe width="444" height="250" src="https://www.youtube.com/embed/sQLFBD-WZl4" title="Running Calculator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="border-radius: 10px; border: solid black 4px; flex-shrink: 0;"></iframe>
+                   </div>
+                   <p> Showing Clear and Running "57 - 61 = -4" </p>
+               </div>
+
+
+               <div class="project-body" id="GBA-Repair">
+                   <div class="project-header">
+                       <h3 class="title">Game Boy Advance Repair</h3>
+                       <h3>January 26, 2024</h3>
+                   </div>
+                   <hr>
+                   <p>
+                       A while ago I found a Game Boy Advance (GBA) in a poor condition. I grew up loving the GBA so
+                       I figured it would be fun side project to repair and refurbish it.
+                   </p><hr>
+                   Initial GBA damage:
+                   <p style="margin: 0px 40px;">
+                       - Will not stay on for longer than a second. <br>
+                       - Screen would not turn on. <br>
+                       - heavy damage to shell <br><br>
+                   </p>
+                   <div class="project-image-container">
+                       <img src="images/GBA-Initial-State (1).jpg" alt="" class="project-image">
+                       <img src="images/GBA-Initial-State (2).jpg" alt="" class="project-image">
+                       <img src="images/GBA-Initial-State (3).jpg" alt="" class="project-image">
+                       <img src="images/GBA-Initial-State (4).jpg" alt="" class="project-image">
+                   </div>
+                   <hr>
+                   <p>
+                       Ordered a new battery and shell. <br>
+                       GBA will now stay on but still no display
+                   </p><hr>
+                   <p>
+                       I took the GBA out of it's shell. <br>
+                       The ribbon cable that connects to the screen was loose so reattaching it fixed the issue. All that is left is to put the GBA into its new shell.
+                   </p>
+                   <div class="project-image-container">
+                       <img src="images/GBA-State-1-23-24.jpg" alt="" class="project-image">
+                       <img src="images/GBA_Testing.jpg" alt="" class="project-image">
+                   </div><hr>
+                   <p>
+                       Finished!
+                   </p>
+                   <p style="margin: 0px 40px;">
+                       - Game slot functions. <br>
+                       - All buttons tested. <br>
+                       - Charging and link port tested.<br>
+                       - Sound and volume setting tested.<br>
+                       - Everything is in order.
+                   </p>
+                   <div class="project-image-container">
+                       <img src="images/GBA-Complete.jpg" alt="" class="project-image">
+                       <img src="images/GBA-Running.jpg" alt="" class="project-image">
+                   </div>
+               </div>
+               <div class="project-body" id="On-the-tip-of-my-tongue">
+                   <div class="project-header">
+                       <h3 class="title"> On The Tip Of My Tongue</h3>
+                       <h3>November 28, 2023</h3>
+                   </div>
+                   <a href="https://github.com/glezbryan/On-the-tip-of-my-tongue/">Github Repository</a>
+                   <hr>
+                   <p>
+                       <b>Language</b><br>
+                       Java
+                       <hr>
+                       <b>Description</b><br>
+                       For my Object-Oriented Programming final project, I created an engaging and interactive game inspired by Wordle, incorporating different difficulty levels to enhance the player experience. The project was undertaken with minimal instructions, providing the freedom to explore creative solutions and apply various programming concepts.
+                       <hr>
+                       <b>Key Features </b>
+                   </p>
+                   <p style="margin: 0px 40px;">
+                       <b>1. Gameplay Mechanics </b><br>
+                       - The game is structured with three difficulty levels - Easy, Medium, and Hard.<br>
+                       - Each difficulty level corresponds to a specific word length (5, 6, and 7 letters, respectively).<br>
+                       - Players are given a set number of guesses based on the difficulty level, adding a strategic element to the gameplay.
+                       <br><br>
+                       <b>2. Graphical User Interface (GUI) </b><br>
+                       - The project utilizes the Swing library to create a user-friendly GUI.<br>
+                       - The GUI enhances the gaming experience by providing a visually appealing and intuitive interface.
+                       <br><br>
+                       <b>3. File Handling </b><br>
+                       - A key aspect of the project involved working with text files to read word libraries for each difficulty level.<br>
+                       - This allowed for a dynamic and easily updatable system for word choices, adding an element of variety to the gameplay.
+                       <br><br>
+                       <b>4. JPanel with Card Layout </b><br>
+                       - One of the standout features of the project is the implementation of a JPanel with a Card Layout.<br>
+                       - This layout efficiently manages multiple panels, facilitating seamless transitions between different menus within the game.
+                       <br>
+                   </p>
+                   <hr>
+                   <p>
+                       <b>Challenges and Learnings </b><br>
+                       While the project was a success overall, it was not without its challenges. The choice of word libraries posed a significant challenge, with the 6-letter word list being too extensive and including obscure words, while the 7-letter word list was too limited, resulting in some common words being excluded.
+                       <hr>
+                       <b>Conclusion </b><br>
+                       The Wordle Challenge Game is a testament to the creativity and problem-solving skills applied in an object-oriented programming context. The use of GUI, file handling, and innovative layout management contribute to a polished and enjoyable gaming experience. The project showcases the ability to overcome challenges and highlights areas for potential improvements in future iterations.
+                       <br><br>
+                       Grade: 18/18
+                   </p>
+               </div>
+
+
+               <div class="project-body" id="Music-matrix">
+                   <div class="project-header">
+                       <h3 class="title">Music Matrix</h3>
+                       <h3>2019</h3>
+                   </div>
+                   <a href="projects/MusicMatrix.c">MusicMatrix.c</a>
+                   <hr>
+                   <p>
+                       <b>Language</b><br>
+                       C
+                       <hr>
+                       <b>Description</b><br>
+                       As a former music major delving into post-tonal theory, I developed a simple yet effective terminal-based program for analyzing 12-tone music using matrices. Inspired by the principles of post-tonal theory and matrix analysis, this program provides a straightforward tool for music theorists and composers interested in exploring this avant-garde style.
+                       <hr>
+                       <b>Key Features</b>
+                   </p>
+                   <p style="margin: 0px 40px;">
+                       <b>1. Matrix Generation</b><br>
+                       The program takes a 12-tone series (the prime row) as input.
+                       <br><br>
+                       <b>2. Matrix Display</b><br>
+                       It constructs and prints out the full matrix for analysis.
+                       <br><br>
+                       <b>3. Chromatic Representation</b><br>
+                       Pitch values are represented in ascending chromatic order, starting from 'C' as 0 and incrementing by semitones. To maintain single-digit representations, 'T' stands for 10 (representing B♭/A#) and 'E' represents 11 (representing B natural).
+                       <br><br>
+                   </p>
+                   <hr>
+                   <p><b>Usage Example</b></p>
+                   <div class="project-image-container">
+                       <img src="images/MusicMatrix.png" alt="Music Matrix">
+                   </div>
+                   <p>
+                       The program generates and displays the corresponding matrix for analysis.<br>
+                       <hr>
+                       <b>Learn More</b><br>
+                       For those interested in learning more about matrices in post-tonal music theory further, <a href="https://musictheory.pugetsound.edu/mt21c/section-194.html">click here</a> to learn more!
+                   </p>
+                      
+               </div>
+           </div>
+       </main>
+
+
+       <footer>
+           <p>
+               Bryan Gonzalez<br>
+               Email: <a href="mailto: glezbryan12@gmail.com">glezbryan12@gmail.com</a><br>
+               2026
+           </p>
+           <nav>
+               <a href="index.html"><br>Home</a>
+               <a href="projects.html">Projects</a>
+               <a href="contact.html">Contact Me!</a>
+           </nav>
+       </footer>
+       <script src="js/index.js"></script>
+   </body>
 </html>
+
